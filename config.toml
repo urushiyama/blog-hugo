@@ -11,11 +11,15 @@ googleAnalytics = "UA-118350112-1"
 description = ""
 keywords = ["programming", "プログラミング", "research", "研究", "HCI", "Tsukuba", "つくば", "筑波", "blog", "ブログ"]
 author = "urushiyama"
-sharingicons = false
+sharingicons = true
 
 [params.highlight]
 style = "tomorrow"
 # languages = ["go", "dockerfile"]
+
+[[params.social]]
+url = "https://github.com/urushiyama"
+fa_icon = "fa-github"
 
 # Multilingual ja (hoge.md) <-> en (hoge.en.md)
 [languages]
