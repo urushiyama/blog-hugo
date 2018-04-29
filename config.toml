@@ -5,6 +5,7 @@ hasCJKLanguage = true
 theme = "hucore"
 copyright = "&copy; 2018- urushiyama"
 enableGitInfo = true
+googleAnalytics = "UA-118350112-1"
 
 [params]
 description = ""
