@@ -1,0 +1,27 @@
+baseURL = "https://urushiyama.github.io/"
+languageCode = "ja"
+defaultContentLanguage = "ja"
+hasCJKLanguage = true
+theme = "hucore"
+copyright = "&copy; 2018- urushiyama"
+enableGitInfo = true
+
+[params]
+description = ""
+keywords = ["programming", "プログラミング", "research", "研究", "HCI", "Tsukuba", "つくば", "筑波", "blog", "ブログ"]
+author = "urushiyama"
+sharingicons = false
+
+[params.highlight]
+style = "tomorrow"
+# languages = ["go", "dockerfile"]
+
+# Multilingual ja (hoge.md) <-> en (hoge.en.md)
+[languages]
+[languages.ja]
+title = "urushiyamaのさまつごと"
+baseURL = "https://urushiyama.github.io/ja/"
+
+[languages.en]
+title = "urushiyama's trivia"
+baseURL = "https://urushiyama.github.io/en/"
