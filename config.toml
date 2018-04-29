@@ -20,8 +20,8 @@ style = "tomorrow"
 [languages]
 [languages.ja]
 title = "urushiyamaのさまつごと"
-# baseURL = "https://urushiyama.github.io/ja/"
+baseURL = "https://urushiyama.github.io/"
 
 [languages.en]
 title = "urushiyama's trivia"
-# baseURL = "https://urushiyama.github.io/en/"
+baseURL = "https://urushiyama.github.io/en/"
