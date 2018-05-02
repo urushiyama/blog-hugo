@@ -3,7 +3,7 @@ languageCode = "ja"
 defaultContentLanguage = "ja"
 hasCJKLanguage = true
 theme = "hucore"
-copyright = "&copy; 2018- urushiyama"
+copyright = "&copy; 2018- urushiyama | Powered by [Hugo](https://gohugo.io) with [HUCORE](https://themes.gohugo.io/hucore/) theme."
 enableGitInfo = true
 googleAnalytics = "UA-118350112-1"
 

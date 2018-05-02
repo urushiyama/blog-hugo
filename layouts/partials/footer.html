@@ -1,6 +1,6 @@
 <section class="section">
   <div class="container has-text-centered">
-    <p>{{ .Site.Copyright | safeHTML }}</p>
+    <p>{{ .Site.Copyright | safeHTML | markdownify }}</p>
   </div>
 </section>
 
