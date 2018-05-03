@@ -3,10 +3,11 @@
 <section class="section">
   <div class="container">
     <div class="content">
-      {{- .Content}}
+      {{- .Content }}
     </div>
   </div>
 </section>
-{{ partial "paginator" . }}
+{{ partial "listup" (dict "c" . "Limit" 5 "Section" "publications")}}
+{{ partial "paginator" (dict "c" . "PaginateSection" "posts") }}
 {{ partial "pager" . }}
 {{ partial "footer" . }}

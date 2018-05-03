@@ -24,9 +24,12 @@ $family-sans-serif: "Yu-Gothic", "游ゴシック", YuGothic, "游ゴシック�
 
 html
   background-color: transparent
+  display: flex
+  justify-content: center
 
 .section
   padding: 40px 20px
+  max-width: 1000px
 
 .nav .level-item
   margin-left: 10px
@@ -45,6 +48,10 @@ nav .level
     color: #222324
   &.notfound
     font-size: 20vw
+
+.title.center
+  text-align: center
+  text-transform: capitalize
 
 code
   color: inherit
@@ -94,9 +101,12 @@ article+article
   table
     td,
     th
-      border: 1px solid #d3d6db
       padding: 8px 10px
       vertical-align: top
+    tr:nth-child(odd)
+      background-color: #f8f8f8
+    tr:nth-child(even)
+      background-color: #ebebeb
   & > code, p > code
     font-size: 90%
     padding: 2px 4px
@@ -114,6 +124,13 @@ article+article
     pre,
     table
       margin-bottom: 1.5em
+  .card
+    margin: 16px
+    background-color: #f8f8f8
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4)
+    padding: 8px
+    p
+      line-height: 0
 
 .paginate
   .title
@@ -121,20 +138,64 @@ article+article
   .subtitle
     font-size: 16px
   .content
-    font-size: 12px
+    font-size: 14px
 
 .posts-paginator
-    border-top: solid 1px lightgray
-    border-bottom: solid 1px lightgray
-    border-radius: 4px
     padding: 4px
 
 .translations
   margin-bottom: 20px
-
   ul,li
     display: inline
   li
     font-size: 16px
     margin-top: 20px
     margin-bottom: 20px
+
+.two-side
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  max-width: 1000px
+  .two-side-left
+    max-width: 750px
+    width: 400px
+    @media screen and (max-width: 400px)
+      width: min-content
+    padding-right: 16px
+  .two-side-right
+    max-width: 750px
+    width: 400px
+    @media screen and (max-width: 400px)
+      width: min-content
+    padding-left: 16px
+
+.two-side.reverse
+  flex-wrap: wrap-reverse
+
+.icon-links
+  .button.is-link
+    text-decoration: none
+
+/* for block of numbers */
+.hljs-ln-numbers
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+  border-right: solid 1px #bebebe
+  text-align: center
+  color: #ccc
+  vertical-align: top
+  padding-right: 5px
+
+  /* your custom style here */
+  // border: none
+
+/* for block of code */
+.hljs-ln-code
+  padding-left: 10px
+  border: none

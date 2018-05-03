@@ -15,7 +15,7 @@ sharingicons = true
 
 [params.highlight]
 style = "tomorrow"
-# languages = ["go", "dockerfile"]
+languages = ["arduino", "erb", "go", "r"]
 
 [[params.social]]
 url = "https://github.com/urushiyama"
@@ -23,10 +23,8 @@ fa_icon = "fa-github"
 
 # Multilingual ja (hoge.md) <-> en (hoge.en.md)
 [languages]
-[languages.ja]
-title = "urushiyamaのさまつごと"
-baseURL = "https://urushiyama.github.io/"
-
-[languages.en]
-title = "urushiyama's trivia"
-baseURL = "https://urushiyama.github.io/en/"
+  [languages.ja]
+  title = "urushiyamaのさまつごと"
+  [languages.en]
+  title = "urushiyama's trivia"
+  languageURL = "en"

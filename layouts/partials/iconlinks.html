@@ -1,0 +1,19 @@
+{{ if or .Params.url_pdf .Params.url_doi .Params.url_bib .Params.project .Params.repo }}
+  <div class="icon-links">
+  {{ with .Params.url_pdf }}
+    <a class="button is-link" href="{{ . }}" alt="Read PDF"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+  {{ end }}
+  {{ with .Params.url_doi }}
+    <a class="button is-link" href="{{ . }}" alt="Find in Digital Library"><i class="fa fa-university" aria-hidden="true"></i></a>
+  {{ end }}
+  {{ with .Params.url_bib }}
+    <a class="button is-link" href="{{ . }}" alt="Download BibTeX File" download><i class="fa fa-anchor" aria-hidden="true"></i></a>
+  {{ end }}
+  {{ with .Params.url_project }}
+    <a class="button is-link" href="{{ . }}" alt="Visit Project Website"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+  {{ end }}
+  {{ with .Params.url_repo }}
+    <a class="button is-link" href="{{ . }}" alt="Visit Project Repository"><i class="fa fa-code-fork" aria-hidden="true"></i></a>
+  {{ end }}
+  </div>
+{{ end }}
