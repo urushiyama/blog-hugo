@@ -1,3 +1,6 @@
 [submodule "themes/hucore"]
 	path = themes/hucore
 	url = https://github.com/mgjohansen/hucore.git
+[submodule "public"]
+	path = public
+	url = git@github.com:urushiyama/urushiyama.github.io.git
