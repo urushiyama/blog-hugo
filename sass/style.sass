@@ -98,6 +98,8 @@ article+article
   table
     &:not(:last-child)
       margin-bottom: 1.5em
+  li+li:not(:first-child)
+    margin-top: 20px
   table
     td,
     th
@@ -216,3 +218,8 @@ article+article
     li
       text-decoration: none
       list-style: disc circle
+
+.prevnext
+  display: flex
+  justify-content: center
+  max-width: 1000px

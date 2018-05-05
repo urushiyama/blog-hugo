@@ -4,36 +4,28 @@
 <section class="section">
   <div class="container">
     <h1 class="title">{{ .Title }}</h1>
-    <h2 class="subtitle is-5">{{ .Date.Format "January 2, 2006" }} - {{ .Lastmod.Format "January 2, 2006" }} {{ if (ne ($.Param "displayauthor") false) }}by {{ .Params.author | default .Site.Params.author }}{{ end }}</h2>
+    <h2 class="subtitle is-5">
+      {{ if eq .Date .Lastmod }}
+        {{ .Date.Format "January 2, 2006" }} {{ if (ne ($.Param "displayauthor") false) }}by {{ .Params.author | default .Site.Params.author }}{{ end }}
+      {{ else }}
+        {{ .Date.Format "January 2, 2006" }} - {{ .Lastmod.Format "January 2, 2006" }} {{ if (ne ($.Param "displayauthor") false) }}by {{ .Params.author | default .Site.Params.author }}{{ end }}
+      {{ end }}
+    </h2>
     {{ if .Params.tags }}
       {{ partial "tags" .Params.tags }}
     {{ end }}
-    {{ if .IsTranslated }}
-    <div class="translations">
-      <span class="subtitle">Translations Available</span>
-      <ul>
-          {{ range .Translations }}
-          <li>
-              <a href="{{ .Permalink }}">
-                {{ if (eq .Lang "en") }}
-                  English
-                {{ else }}
-                  日本語
-                {{ end }}
-                : {{ .Title }}{{ if .IsPage }}{{ end }}</a>
-          </li>
-          {{ end}}
-      </ul>
-    </div>
-    {{ end }}
+    {{ partial "translations" . }}
     <div class="content">
-      {{ .Content }}
+      {{ .Content | emojify }}
     </div>
     {{ if (ne ($.Param "sharingicons") false) }}
     {{ partial "sharing.html" . }}
     {{ end }}
   </div>
 </section>
+{{ if not .IsHome }}
+{{ partial "prevnext" . }}
+{{ end }}
 {{ partial "disqus" . }}
 {{ partial "footer" . }}
 </body>

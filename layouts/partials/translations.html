@@ -1,0 +1,18 @@
+{{ if .IsTranslated }}
+<div class="translations">
+  <span class="subtitle">Translations Available</span>
+  <ul>
+      {{ range .Translations }}
+      <li>
+          <a href="{{ .Permalink }}">
+            {{ if (eq .Lang "en") }}
+              English
+            {{ else }}
+              日本語
+            {{ end }}
+            {{ if .IsPage }}: {{ .Title }}{{ end }}</a>
+      </li>
+      {{ end}}
+  </ul>
+</div>
+{{ end }}
