@@ -2,7 +2,9 @@
 title: "My First Post"
 date: 2018-04-30T07:09:32+09:00
 draft: false
-tags: ["First", "Hugo"]
+tags:
+    - "First"
+    - "Hugo"
 ---
 
 # My First Post with Hugo

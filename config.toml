@@ -2,6 +2,8 @@ baseURL = "https://urushiyama.github.io/"
 languageCode = "ja"
 defaultContentLanguage = "ja"
 hasCJKLanguage = true
+smartypants = false
+extensionsmask = ["EXTENSION_HTML_USE_SMARTYPANTS"]
 theme = "hucore"
 copyright = "&copy; 2018- urushiyama | Powered by [Hugo](https://gohugo.io) with [HUCORE](https://themes.gohugo.io/hucore/) theme."
 enableGitInfo = true
@@ -9,13 +11,13 @@ googleAnalytics = "UA-118350112-1"
 
 [params]
 description = ""
-keywords = ["programming", "プログラミング", "research", "研究", "HCI", "Tsukuba", "つくば", "筑波", "blog", "ブログ"]
+keywords = ["プログラミング", "HCI", "つくば", "ブログ"]
 author = "urushiyama"
 sharingicons = true
 
 [params.highlight]
 style = "tomorrow"
-languages = ["arduino", "erb", "go", "r"]
+languages = ["arduino", "erb", "go", "r", "yaml"]
 
 [[params.social]]
 url = "https://github.com/urushiyama"
@@ -27,4 +29,5 @@ fa_icon = "fa-github"
   title = "urushiyamaのさまつごと"
   [languages.en]
   title = "urushiyama's trivia"
+  keywords = ["programming", "HCI", "tsukuba", "blog"]
   languageURL = "en"

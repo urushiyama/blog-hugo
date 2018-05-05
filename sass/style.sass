@@ -101,13 +101,38 @@ article+article
   table
     td,
     th
-      padding: 8px 10px
+      padding: 2px 2px
       vertical-align: top
     tr:nth-child(odd)
       background-color: #f8f8f8
     tr:nth-child(even)
       background-color: #ebebeb
-  & > code, p > code
+    td,th
+      &.hljs-ln-numbers
+        -webkit-touch-callout: none
+        -webkit-user-select: none
+        -khtml-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
+
+        border-right: solid 1px #bebebe
+        text-align: center
+        color: #ccc
+        vertical-align: top
+        padding-right: 5px
+
+        /* your custom style here */
+        padding-top: 0px
+        padding-bottom: 2px
+        padding-left: 8px
+        text-align: right
+      &.hljs-ln-code
+        padding-left: 8px
+        border: none
+        text-overflow: ellipsis
+
+  & > code, p > code, li > code
     font-size: 90%
     padding: 2px 4px
     margin: 0 2px
@@ -177,25 +202,17 @@ article+article
   .button.is-link
     text-decoration: none
 
-/* for block of numbers */
-.hljs-ln-numbers
-  -webkit-touch-callout: none
-  -webkit-user-select: none
-  -khtml-user-select: none
-  -moz-user-select: none
-  -ms-user-select: none
-  user-select: none
-
-  border-right: solid 1px #bebebe
-  text-align: center
-  color: #ccc
-  vertical-align: top
-  padding-right: 5px
-
-  /* your custom style here */
-  // border: none
-
 /* for block of code */
 .hljs-ln-code
   padding-left: 10px
   border: none
+
+.toc
+  border: dotted 1px #bebebe
+  border-radius: 4px
+  ul
+    margin-top: 24px
+    margin-bottom: 24px
+    li
+      text-decoration: none
+      list-style: disc circle

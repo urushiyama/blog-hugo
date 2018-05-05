@@ -1,15 +1,36 @@
+{{ if .Params.keywords }}
+{{ .Scratch.Set "keywords" (delimit .Params.Keywords ", ") }}
+{{ else }}
+{{ .Scratch.Set "keywords" (delimit .Site.Params.Keywords ", ") }}
+{{ end }}
+{{ if eq .IsHome true }}
+{{ .Scratch.Set "title" .Site.Title }}
+{{ .Scratch.Set "desc" .Site.Params.description }}
+{{ .Scratch.Set "type" "website" }}
+{{ else }}
+{{ .Scratch.Set "title" (printf "%s - %s" .Title .Site.Title) }}
+{{ if .Truncated }}
+{{ .Scratch.Set "desc" (printf "%s..." (.Summary | plainify)) }}
+{{ else }}
+{{ .Scratch.Set "desc" (.Summary | plainify) }}
+{{ end }}
+{{ .Scratch.Set "type" "article" }}
+{{ end }}
 <!DOCTYPE html>
 <html{{ with .Site.LanguageCode }} lang="{{ . }}"{{ end }}>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta content="{{ delimit .Site.Params.Keywords ", " }}" name="keywords">
+<meta name="robots" content="index,follow">
+<meta content='{{ .Scratch.Get "keywords" }}' name="keywords">
 <meta content="{{ .Site.Params.Author }}" name="author">
-<meta property="og:title" content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}">
+<meta content='{{ .Scratch.Get "desc" }}' name="description">
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta property="og:title" content='{{ .Scratch.Get "title" }}'>
 <meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:description" content="{{ .Site.Params.Description }}">
-<meta property="og:type" content="website" />
-<title>{{ .Title }}{{ if eq .IsHome false }} | {{ .Site.Title }}{{ end }}</title>
+<meta property="og:description" content='{{ .Scratch.Get "desc" }}'>
+<meta property="og:type" content='{{ .Scratch.Get "type" }}' />
+<title>{{ .Scratch.Get "title" }}</title>
 <!-- enable inline math equations-->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
