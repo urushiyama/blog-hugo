@@ -17,7 +17,7 @@ sharingicons = true
 
 [params.highlight]
 style = "tomorrow"
-languages = ["arduino", "erb", "go", "r", "yaml"]
+languages = ["arduino", "erb", "go", "r", "tex", "yaml"]
 
 [[params.social]]
 url = "https://github.com/urushiyama"
