@@ -20,6 +20,14 @@ sharingicons = true
 style = "tomorrow"
 languages = ["arduino", "erb", "go", "r", "tex", "yaml"]
 
+[params.image]
+url = "img/photo.png"
+width = 1024
+height = 1024
+
+[params.logo]
+url = "img/photo.png"
+
 [[params.social]]
 url = "https://github.com/urushiyama"
 fa_icon = "fa-github"

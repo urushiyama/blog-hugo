@@ -1,9 +1,10 @@
 $blue: #2077b2
 $primary: $blue
 $grey-dark: #42464c
-$family-sans-serif: "Yu-Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif
+$family-sans-serif: -apple-system, blinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', YuGothicM, YuGothic, Meiryo, sans-serif
+$family-serif: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif
 
-@import "node_modules/bulma/bulma"
+@import "../node_modules/bulma/bulma"
 
 .container
   max-width: 800px
@@ -26,6 +27,11 @@ html
   background-color: transparent
   display: flex
   justify-content: center
+
+body
+  min-width: 800px
+  @media screen and (max-width: 800px)
+    min-width: 100%
 
 .section
   padding: 40px 20px
@@ -201,7 +207,7 @@ article+article
   flex-wrap: wrap-reverse
 
 .icon-links
-  .button.is-link
+  .button.is-text
     text-decoration: none
 
 /* for block of code */

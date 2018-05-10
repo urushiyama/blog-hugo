@@ -1,20 +1,43 @@
-<section class="section">
+
+<nav class="navbar has-shadow is-spaced" role="navigation" aria-label="main navigation">
   <div class="container">
-    <nav class="nav">
-      <div class="nav-left">
-        <a class="nav-item" href="{{ .Site.BaseURL }}{{with .Site.Params.languageURL}}{{ . }}{{ end }}"><h1 class="title is-4">{{ .Site.Title }}</h1></a>
+    <div class="navbar-brand">
+      <a class="navbar-item" href="{{ .Site.BaseURL }}{{with .Site.Params.languageURL}}{{ . }}{{ end }}"><span class="title is-4">{{ .Site.Title }}</span></a>
+      {{ range .Site.Params.social }}
+      <a class="navbar-item is-hidden-desktop" href="{{ .url }}" target="_blank">
+        <span class="icon">
+          <i class="fa {{ .fa_icon }}"></i>
+        </span>
+      </a>
+      {{ end }}
+      <a role="button" class="navbar-burger" data-target="navMenuContents" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navMenuContents" class="navbar-menu">
+      <div class="navbar-start">
+        {{ if where .Site.Pages "Section" "posts" }}
+        <a class="navbar-item" href="{{ .Site.BaseURL }}{{with .Site.Params.languageURL}}{{ . }}{{ end }}/posts">
+          Posts
+        </a>
+        {{ end }}
+        {{ if where .Site.Pages "Section" "publications" }}
+        <a class="navbar-item" href="{{ .Site.BaseURL }}{{with .Site.Params.languageURL}}{{ . }}{{ end }}/publications">
+          Publications
+        </a>
+        {{ end }}
       </div>
-      <div class="nav-right">
-        <nav class="nav-item level is-mobile">
-          {{ range .Site.Params.social }}
-          <a class="level-item" href="{{ .url }}" target="_blank">
-            <span class="icon">
-              <i class="fa {{ .fa_icon }}"></i>
-            </span>
-          </a>
-          {{ end }}
-        </nav>
+      <div class="navbar-end">
+        {{ range .Site.Params.social }}
+        <a class="navbar-item is-hidden-mobile" href="{{ .url }}" target="_blank">
+          <span class="icon">
+            <i class="fa {{ .fa_icon }}"></i>
+          </span>
+        </a>
+        {{ end }}
       </div>
-    </nav>
+    </div>
   </div>
-</section>
+</nav>
