@@ -2,6 +2,8 @@
 
 bash optim_img.sh
 
+bash format_text.sh
+
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
 # Build the project.

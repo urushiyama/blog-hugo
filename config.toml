@@ -6,7 +6,7 @@ smartypants = false
 extensionsmask = ["EXTENSION_HTML_USE_SMARTYPANTS"]
 theme = "hucore"
 copyright = "&copy; 2018- urushiyama | Powered by [Hugo](https://gohugo.io) with [HUCORE](https://themes.gohugo.io/hucore/) theme."
-enableGitInfo = true
+# enableGitInfo = true
 googleAnalytics = "UA-118350112-1"
 enableRobotsTXT = true
 

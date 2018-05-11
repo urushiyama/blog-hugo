@@ -8,7 +8,13 @@
         {{ range $paginator.Pages }}
         <article>
           <h3 class="title"><a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} ::Draft{{ end }}</h3>
-          <h4 class="subtitle is-5">{{ .Date.Format "January 2, 2006" }} - {{ .Lastmod.Format "January 2, 2006" }}</h4>
+          <h4 class="subtitle is-5">
+            {{ if eq (.Date.Format "January 2, 2006") (.Lastmod.Format "January 2, 2006") }}
+            {{ .Date.Format "January 2, 2006" }}
+            {{ else }}
+            {{ .Date.Format "January 2, 2006" }} - {{ .Lastmod.Format "January 2, 2006" }}
+            {{ end }}
+          </h4>
           {{ if .Params.tags }}
             {{ partial "tags" .Params.tags }}
           {{ end }}

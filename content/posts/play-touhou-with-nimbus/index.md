@@ -1,6 +1,7 @@
 ---
 title: "東方風神録をParallels Desktop 13+SteelSeries Nimbusコントローラで操作する"
 date: 2018-05-05T13:12:28+09:00
+lastmod: 2018-05-11T16:16:03+09:00
 draft: false
 tags:
     - "東方"
@@ -71,7 +72,7 @@ iOS用に購入したMFiコントローラを使い道が少ない為に放置�
     ZIPファイルをダウンロード・展開し，GamepadMenu.appをアプリケーションフォルダに移動する．
 
     一応はGithubにソースコードが上がっているので，Wineよりはましかな，といったところ．
-    Gatekeeperによる警告が表示される場合は右クリック＞開くを選択すると強制的に実行することができる（Mac OSのTips）．
+    Gatekeeperによる警告が表示される場合は右クリック＞開くを選択すると強制的に実行することができる（MacOSのTips）．
 
 ### Windows（ゲストOS）側
 
@@ -92,14 +93,14 @@ Windows仮想端末をシャットダウンした上で，Windows仮想端末の
 
 ### MacとMFiコントローラのペアリング
 
-Mac OSのシステム環境設定を開き，"Bluetooth"を選択する．
+MacOSのシステム環境設定を開き，"Bluetooth"を選択する．
 MFiコントローラのボタン等を操作し（NimbusではBluetoothマークのついたボタンを長押しする）
 ペアリングモードを開始させると，しばらく後にMacのBluetooth環境設定画面内のリストに
 コントローラ名が表示されるので，その横にある「接続」ボタンをクリックして接続する．
 
 ### GamepadMenuの設定
 
-GamepadMenu.appをFinderで右クリックし、「パッケージの内容を表示」を選択する．
+GamepadMenu.appをFinderで右クリックし，「パッケージの内容を表示」を選択する．
 Contents＞Resources＞Presetsに移動し，Presetsフォルダ内に以下を"Touhou.plist"としてテキスト形式で保存する．
 
 {{% download path="assets/Touhou.plist" name="Touhou.plist" %}}
@@ -162,12 +163,33 @@ R2トリガー（+決定）でスキップができるようになっている�
 
 ## Step 5. More Configuration
 
+### スキップ押下時にスティックを倒すとMac側でMisson Control等が発生することの対策
+
+- 2018/5/12 追記
+
+標準では，コントロールキー（Ctrl）を押した状態でカーソルキーを入力すると
+MacOS側でキー入力が処理され，Misson ControlやMacOS上の
+別のフルスクリーンアプリケーションに画面が切り替わる．
+
+ここで，東方風神録などのスキップにはCtrlが割り当てられているため，
+スキップ中にスティックを傾けると画面が切り替わり，ゲームの操作が不能になってしまうため，
+そのままスキップが完了して被弾する，といった不都合が生じる．
+
+この対策として，Parallels Desktopの環境設定を開き，
+ショートカット＞macOS システムショートカット＞macOS システムショートカットを送信する: 
+の下にあるプルダウンメニューから「常に」を選択する．
+この設定により，Ctrl入力がシステムショートカットに割り当てられているキーの組み合わせとして
+入力されたとしても，全てのキー入力がWindows仮装端末側に転送されるようになるため，
+前述の不都合が発生しなくなる．
+
+### ボタン配置を変更する
+
 ボタン配置が気に入らない方向け．
 
 Touhou.plistは各ボタン・スティック・トリガーを表す`key`と，
 それが押されたときに入力されるCarbon Frameworkのイベント番号を表す`integer`
 または入力される文字を表す`string`の辞書（ハッシュ）になっているので，
-"/System/Library/Frameworks/Carbon.framework/Frameworks/HIToolbox.framework/Headers/Events.h"を参考にして
+/System/Library/Frameworks/Carbon.framework/Frameworks/HIToolbox.framework/Headers/Events.hを参考にして
 任意の文字あるいはモディファイアキーを設定できる．
 
 「C言語のヘッダファイルの意味がわからない！」という方は，Touhou.plistのkeyとintegerの組み合わせを
