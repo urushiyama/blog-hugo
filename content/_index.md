@@ -26,7 +26,7 @@ IPLAB WAVEチーム
 
 {{% twosideright %}}
 {{% card %}}
-![My Photo](img/photo.jpg)
+![My Photo](/img/photo.jpg)
 {{% /card %}}
 {{% /twosideright %}}
 {{% /twoside %}}

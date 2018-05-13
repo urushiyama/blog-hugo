@@ -1,7 +1,7 @@
 {{ if where .c.Data.Pages "Section" .PaginateSection }}
 <section class="section">
   <div class="container posts-paginator">
-    <h2 class="title center">{{ .PaginateSection }}</h2>
+    <h2 class="title center"><a href="{{ .BaseURL }}{{ .PaginateSection }}">{{ .PaginateSection }}</a></h2>
     <div class="content">
       <div class="container paginate">
         {{ $paginator := .c.Paginate (where .c.Data.Pages "Section" .PaginateSection) }}
