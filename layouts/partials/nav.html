@@ -19,12 +19,12 @@
     <div id="navMenuContents" class="navbar-menu">
       <div class="navbar-start">
         {{ if where .Site.Pages "Section" "publications" }}
-        <a class="navbar-item" href="{{ .Site.BaseURL }}{{with .Site.Params.languageURL}}{{ . }}{{ end }}/publications">
+        <a class="navbar-item" href="{{ .Site.BaseURL }}{{with .Site.Params.languageURL}}{{ . }}/{{ end }}publications">
           Publications
         </a>
         {{ end }}
         {{ if where .Site.Pages "Section" "posts" }}
-        <a class="navbar-item" href="{{ .Site.BaseURL }}{{with .Site.Params.languageURL}}{{ . }}{{ end }}/posts">
+        <a class="navbar-item" href="{{ .Site.BaseURL }}{{with .Site.Params.languageURL}}{{ . }}/{{ end }}posts">
           Posts
         </a>
         {{ end }}
