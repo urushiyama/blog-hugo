@@ -16,8 +16,6 @@ keywords:
     - "Parallels Desktop 13"
 ---
 
-# 東方風神録をParallels Desktop 13+SteelSeries Nimbusコントローラで操作する
-
 PC用のコントローラといえばPS4コントローラやUSB接続のHIDコントローラを用いることが一般的だが，
 iOS用に購入したMFiコントローラを使い道が少ない為に放置していたので，Macとペアリングして活用できないだろうか，
 と思った次第である．
@@ -189,7 +187,7 @@ MacOS側でキー入力が処理され，Misson ControlやMacOS上の
 Touhou.plistは各ボタン・スティック・トリガーを表す`key`と，
 それが押されたときに入力されるCarbon Frameworkのイベント番号を表す`integer`
 または入力される文字を表す`string`の辞書（ハッシュ）になっているので，
-/System/Library/Frameworks/Carbon.framework/Frameworks/HIToolbox.framework/Headers/Events.hを参考にして
+/System＞Library＞Frameworks＞Carbon.framework＞Frameworks＞HIToolbox.framework＞Headers＞Events.hを参考にして
 任意の文字あるいはモディファイアキーを設定できる．
 
 「C言語のヘッダファイルの意味がわからない！」という方は，Touhou.plistのkeyとintegerの組み合わせを

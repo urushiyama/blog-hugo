@@ -37,7 +37,9 @@ fa_icon = "fa-github"
 [languages]
   [languages.ja]
   title = "urushiyamaのさまつごと"
+  toc = "目次"
   [languages.en]
   title = "urushiyama's trivia"
+  toc = "Table of Contents"
   keywords = ["programming", "HCI", "tsukuba", "blog"]
   languageURL = "en"

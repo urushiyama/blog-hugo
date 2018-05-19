@@ -1,5 +1,5 @@
 <div class="tags">
     {{ range . }}
-        <a class="button is-text" href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
+        <a class="tag is-rounded" href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
     {{ end }}
 </div>

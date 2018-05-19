@@ -1,1 +1,5 @@
-<a href='{{ with .Get "path" }}{{ . }}{{ end }}' download>{{ with .Get "name" }}Download: {{ . }}{{ end }}</a>
+<div class="field">
+  <a href='{{ with .Get "path" }}{{ . }}{{ end }}'class="button is-link is-outlined" download>
+    {{ with .Get "name" }}<i class="fa fa-download" aria-hidden="true"></i>&nbsp;{{ . }}{{ end }}
+  </a>
+</div>

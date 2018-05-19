@@ -64,7 +64,12 @@ code
   background-color: transparent
   font-size: 90%
 
-
+.columns.is-reversed
+  @media screen and (max-width: 769px)
+    flex-direction: column-reverse
+    display: flex
+    .column
+      width: 100%
 
 article+article
   margin-top: 40px
@@ -105,7 +110,7 @@ article+article
     &:not(:last-child)
       margin-bottom: 1.5em
   li+li:not(:first-child)
-    margin-top: 20px
+    margin-top: 16px
   table
     td,
     th
@@ -185,26 +190,26 @@ article+article
     margin-top: 20px
     margin-bottom: 20px
 
-.two-side
-  display: flex
-  justify-content: center
-  flex-wrap: wrap
-  max-width: 1000px
-  .two-side-left
-    max-width: 750px
-    width: 400px
-    @media screen and (max-width: 400px)
-      width: auto
-    padding-right: 16px
-  .two-side-right
-    max-width: 750px
-    width: 400px
-    @media screen and (max-width: 400px)
-      width: auto
-    padding-left: 16px
+// .two-side
+//   display: flex
+//   justify-content: center
+//   flex-wrap: wrap
+//   max-width: 1000px
+//   .two-side-left
+//     max-width: 750px
+//     width: 400px
+//     @media screen and (max-width: 400px)
+//       width: auto
+//     padding-right: 16px
+//   .two-side-right
+//     max-width: 750px
+//     width: 400px
+//     @media screen and (max-width: 400px)
+//       width: auto
+//     padding-left: 16px
 
-.two-side.reverse
-  flex-wrap: wrap-reverse
+// .two-side.reverse
+//   flex-wrap: wrap-reverse
 
 .icon-links
   .button.is-text
@@ -216,16 +221,36 @@ article+article
   border: none
 
 .toc
-  border: dotted 1px #bebebe
-  border-radius: 4px
+  // border: dotted 1px #bebebe
+  // border-radius: 4px
+  ul:first-child
+    margin-left: 0px
   ul
     margin-top: 24px
     margin-bottom: 24px
     li
-      text-decoration: none
-      list-style: disc circle
+      list-style: none inside
 
 .prevnext
   display: flex
   justify-content: center
   max-width: 1000px
+
+=keyframes($animation-name)
+  @-webkit-keyframes #{$animation-name}
+    @content
+  @-moz-keyframes #{$animation-name}
+    @content
+  @keyframes #{$animation-name}
+    @content
+
++keyframes(openMenuItem)
+  0%
+    opacity: 0
+    height: 0px
+  100%
+    opacity: 1
+    height: inherit
+
+.navbar-menu.is-active
+  animation: openMenuItem 0.4s linear
