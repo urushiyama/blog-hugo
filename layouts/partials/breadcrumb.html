@@ -4,6 +4,16 @@
     {{ if eq .Page.Section "posts" }}
     <li><a href="{{ .Site.BaseURL }}{{with .Site.Params.languageURL}}{{ . }}/{{ end }}posts">{{ .Page.Section | humanize }}</a></li>
     {{ end }}
-    <li class="is-active"><a href="#" aria-current="page">.</a></li>
+    <li class="is-active">
+      <a href="#" aria-current="page">
+        {{ if .Title }}
+        {{ .Title }}
+        {{ else if .Page.Title }}
+        {{ .Page.Title }}
+        {{ else }}
+        .
+        {{ end }}
+      </a>
+    </li>
   </ul>
 </nav>
