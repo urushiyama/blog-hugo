@@ -1,0 +1,2 @@
+- Hugo <https://gohugo.io> is licensed under the Apache License 2.0.
+- Hucore <https://github.com/mgjohansen/hucore> is licensed under the MIT License.

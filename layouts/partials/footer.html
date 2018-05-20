@@ -1,6 +1,11 @@
 <section class="section">
   <div class="container has-text-centered">
     <p>{{ .Site.Copyright | safeHTML | markdownify }}</p>
+    <p>
+      <a href="{{ "/privacy-policy/" | relLangURL }}">Privacy Policy</a>
+      &nbsp;|&nbsp;
+      <a href="{{ "/license/" | relLangURL }}">LICENSE</a>
+    </p>
   </div>
 </section>
 {{ partial "site-schema" . }}
