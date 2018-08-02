@@ -19,7 +19,7 @@ sharingicons = true
 
 [params.highlight]
 style = "tomorrow"
-languages = ["arduino", "erb", "go", "r", "tex", "yaml"]
+languages = ["arduino", "erb", "go", "r", "swift", "tex", "yaml"]
 
 [params.image]
 url = "img/photo.png"
