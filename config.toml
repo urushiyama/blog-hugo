@@ -33,6 +33,10 @@ url = "img/photo.png"
 url = "https://github.com/urushiyama"
 fa_icon = "fa-github"
 
+[[params.social]]
+url = "https://twitter.com/YUrushiyama"
+fa_icon = "fa-twitter"
+
 # Multilingual ja (hoge.md) <-> en (hoge.en.md)
 [languages]
   [languages.ja]
