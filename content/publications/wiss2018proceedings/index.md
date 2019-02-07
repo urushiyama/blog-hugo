@@ -1,6 +1,6 @@
 ---
-title: "Sample Publication"
-date: 2018-05-03T19:33:58+09:00
+title: "指の軌跡に基づく手元の視認が不要なスマートフォン向けかな文字入力手法（WISS2018）"
+date: 2018-09-27T00:00:00+09:00
 draft: false
 url_pdf: https://www.wiss.org/WISS2018Proceedings/demo/1-A07.pdf
 # url_doi: /#
@@ -8,6 +8,12 @@ url_pdf: https://www.wiss.org/WISS2018Proceedings/demo/1-A07.pdf
 # url_project: /#
 # url_repo: /#
 reference: 漆山裕太，中村拓人，志築文太郎．指の軌跡に基づく手元の視認が不要なスマートフォン向けかな文字入力手法．第26回インタラクティブシステムとソフトウェアに関するワークショップ（WISS2018），日本ソフトウェア科学会，2018年9月．
+tags:
+    - "WISS"
+    - "ワークショップ"
+keywords:
+    - "WISS 2018"
+    - "デモ発表"
 ---
 
 ## 概要
