@@ -5,8 +5,33 @@
   {{ range first .Limit (where .c.Data.Pages "Section" .Section) }}
     <div class="box">
     <article class="content control has-addons">
-      <h3 class="title"><a href="{{ .Permalink }}">{{ .Params.reference }}</a>{{ if .Draft }} ::Draft{{ end }}</h3>
-      {{ partial "iconlinks" . }}
+      {{ if eq .Section "publications" }}
+        <h3 class="title"><a href="{{ .Permalink }}">{{ .Params.reference }}</a>{{ if .Draft }} ::Draft{{ end }}</h3>
+        {{ partial "iconlinks" . }}
+      {{ else }}
+        <h3 class="title"><a href="{{ .Permalink }}">{{ .Params.title }}</a>{{ if .Draft }} ::Draft{{ end }}</h3>
+          <h4 class="subtitle is-5">
+            {{ if eq (.Date.Format "January 2, 2006") (.Lastmod.Format "January 2, 2006") }}
+            {{ .Date.Format "January 2, 2006" }}
+            {{ else }}
+            {{ .Date.Format "January 2, 2006" }} - {{ .Lastmod.Format "January 2, 2006" }}
+            {{ end }}
+          </h4>
+          {{ if .Params.tags }}
+            {{ partial "tags" .Params.tags }}
+          {{ end }}
+          <div class="content">
+            {{ .Summary | plainify | safeHTML }}
+            {{ if .Truncated }}
+            ...<a class="button is-text" href="{{ .Permalink }}" style="height:20px">
+              Read more
+              <span class="icon is-small">
+                <i class="fa fa-angle-double-right"></i>
+              </span>
+            </a>
+            {{ end }}
+          </div>
+      {{ end }}
     </article>
     </div>
   {{ end }}

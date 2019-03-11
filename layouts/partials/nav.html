@@ -23,6 +23,11 @@
           Publications
         </a>
         {{ end }}
+        {{ if where .Site.Pages "Section" "projects" }}
+        <a class="navbar-item" href="{{ .Site.BaseURL }}{{with .Site.Params.languageURL}}{{ . }}/{{ end }}projects">
+          Projects
+        </a>
+        {{ end }}
         {{ if where .Site.Pages "Section" "posts" }}
         <a class="navbar-item" href="{{ .Site.BaseURL }}{{with .Site.Params.languageURL}}{{ . }}/{{ end }}posts">
           Posts
