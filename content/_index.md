@@ -26,8 +26,6 @@ Research: urushiyama [at] iplab.cs.tsukuba.ac.jp
 
 ## 所属
 
-筑波大学 情報学群 情報メディア創成学類
-
 [インタラクティブプログラミング研究室（IPLAB）](https://www.iplab.cs.tsukuba.ac.jp)  
 WAVEチーム
 
