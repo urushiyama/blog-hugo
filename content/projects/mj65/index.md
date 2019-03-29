@@ -1,10 +1,17 @@
 ---
-title: "MJ65 Keyboard"
+title: "MJ65: the Keyboard of Mac JIS-layout Lovers, by Mac JIS-layout Lovers, for Mac JIS-layout Lovers."
 date: 2019-03-11T02:02:08+09:00
 draft: false
+tags:
+    - "自作キーボード"
+    - "JIS配列"
+keywords:
+    - "自作キーボード"
+    - "PCB"
+    - "プリント基板"
+    - "Kailh Low Profile (Choc) 対応"
+    - "JIS配列"
 ---
-
-# MJ65: the Keyboard of Mac JIS-layout Lovers, by Mac JIS-layout Lovers, for Mac JIS-layout Lovers.
 
 {{% card %}}
 ![MJ65](img/mj65.png)
@@ -17,6 +24,8 @@ MJ65は某🍎のJISキーボードに対するリスペクトとして設計し
 - Cherry MX互換，Alps互換，Kailh Chocスイッチに対応
 - JIS配列を始めとして，分割スペース，USライクな配列をサポート
 - オープンソース
+
+<!--more-->
 
 ## 製作に必要なもの
 
