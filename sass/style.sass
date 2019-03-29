@@ -46,6 +46,8 @@ nav .level
 
 .subtitle
   color: #69707a
+  &:not(:last-child)
+    margin-bottom: 8px
 
 .title
   line-height: 1.25
@@ -54,10 +56,12 @@ nav .level
     color: #222324
   &.notfound
     font-size: 20vw
-
-.title.center
-  text-align: center
-  text-transform: capitalize
+  &.center
+    text-align: center
+  &:not(.is-spaced)+.subtitle
+    margin-top: -8px
+  &:not(:last-child)
+    margin-bottom: 12px
 
 code
   color: inherit

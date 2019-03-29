@@ -1,6 +1,6 @@
 {{ if where .c.Data.Pages "Section" .Section }}
 <section class="section">
-  <h2 class="title center" id="{{ .Section }}"><a href="{{ .BaseURL | absLangURL }}{{ .Section }}">{{ .Section }}</a></h2>
+  <h2 class="title center" id="{{ .Section }}"><a href="{{ .BaseURL | absLangURL }}{{ .Section }}">{{ title .Section }}</a></h2>
   <div class="container">
   {{ range first .Limit (where .c.Data.Pages.ByDate.Reverse "Section" .Section) }}
     <div class="box">

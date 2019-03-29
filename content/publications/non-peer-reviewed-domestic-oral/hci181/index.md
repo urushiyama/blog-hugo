@@ -13,6 +13,11 @@ tags:
 keywords:
     - "HCI研究会"
     - "登壇発表"
+categories:
+    - "non-peer-reviewed"
+    - "domestic"
+    - "archival"
+    - "oral"
 ---
 
 ## 概要

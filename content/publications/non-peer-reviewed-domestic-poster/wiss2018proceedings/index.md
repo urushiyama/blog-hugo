@@ -14,6 +14,11 @@ tags:
 keywords:
     - "WISS 2018"
     - "デモ発表"
+categories:
+    - "non-peer-reviewed"
+    - "domestic"
+    - "archival"
+    - "poster"
 ---
 
 ## 概要

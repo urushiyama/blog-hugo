@@ -1,0 +1,65 @@
+{{ if where .c.Data.Pages "Section" .Section }}
+<section class="section">
+  <div class="container">
+    <div class="content">
+      <h2 class="title" id="{{ .Section }}"><a href="{{ .BaseURL | absLangURL }}{{ .Section }}">{{ title .Section }}</a></h2>
+      <ul>
+        {{ $peerReviewedInternationalPoster := where .c.Data.Pages.ByDate.Reverse ".Params.categories" "intersect" (slice "poster") | intersect (where .c.Data.Pages.ByDate.Reverse ".Params.categories" "intersect" (slice "international")) | intersect (where .c.Data.Pages.ByDate.Reverse ".Params.categories" "intersect" (slice "peer-reviewed")) }}
+        {{ if $peerReviewedInternationalPoster }}
+        <li class="subtitle">
+        {{ if eq .c.Lang "en" }}
+        Peer-reviewed International Conference Proceedings (Demo/Poster)
+        {{ else }}
+        査読付き国際会議論文（デモ・ポスター発表）
+        {{ end }}
+        </li>
+          <ol>
+          {{ range $peerReviewedInternationalPoster }}
+            <li>
+              <a href="{{ .Permalink }}">{{ .Params.reference }}</a>{{ if .Draft }} ::Draft{{ end }}
+              {{ partial "iconlinks" . }}
+            </li>
+          {{ end }}
+          </ol>
+        {{ end }}
+        {{ $nonPeerReviewedDomesticOral := where .c.Data.Pages.ByDate.Reverse ".Params.categories" "intersect" (slice "oral") | intersect (where .c.Data.Pages.ByDate.Reverse ".Params.categories" "intersect" (slice "domestic")) | intersect (where .c.Data.Pages.ByDate.Reverse ".Params.categories" "intersect" (slice "non-peer-reviewed")) }}
+        {{if $nonPeerReviewedDomesticOral }}
+        <li class="subtitle">
+        {{ if eq .c.Lang "en" }}
+        Non-peer-reviewed Domestic Conference Proceedings (Oral)
+        {{ else }}
+        査読なし国内会議論文（口頭発表）
+        {{ end }}
+        </li>
+          <ol>
+          {{ range $nonPeerReviewedDomesticOral}}
+            <li>
+              <a href="{{ .Permalink }}">{{ .Params.reference }}</a>{{ if .Draft }} ::Draft{{ end }}
+              {{ partial "iconlinks" . }}
+            </li>
+          {{ end }}
+          </ol>
+        {{ end }}
+        {{ $nonPeerReviewedDomesticPoster := where .c.Data.Pages.ByDate.Reverse ".Params.categories" "intersect" (slice "poster") | intersect (where .c.Data.Pages.ByDate.Reverse ".Params.categories" "intersect" (slice "domestic")) | intersect (where .c.Data.Pages.ByDate.Reverse ".Params.categories" "intersect" (slice "non-peer-reviewed")) }}
+        {{ if $nonPeerReviewedDomesticPoster }}
+        <li class="subtitle">
+        {{ if eq .c.Lang "en" }}
+        Non-peer-reviewed Domestic Conference Proceedings (Demo/Poster)
+        {{ else }}
+        査読なし国内会議論文（デモ・ポスター発表）
+        {{ end }}
+        </li>
+          <ol>
+          {{ range $nonPeerReviewedDomesticPoster }}
+            <li>
+              <a href="{{ .Permalink }}">{{ .Params.reference }}</a>{{ if .Draft }} ::Draft{{ end }}
+              {{ partial "iconlinks" . }}
+            </li>
+          {{ end }}
+          </ol>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</section>
+{{ end }}
