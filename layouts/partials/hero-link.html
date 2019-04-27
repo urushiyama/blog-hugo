@@ -1,0 +1,20 @@
+<div class="columns">
+  {{ if .Params.macappstorelink }}
+  <div class="column">
+    <a href="{{ .Params.macappstorelink }}">
+      {{ if eq .Lang "en" }}
+      <img src="{{ .Site.BaseURL }}img/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg"/>
+      {{ else }}
+      <img src="{{ .Site.BaseURL }}img/Download_on_the_Mac_App_Store_Badge_JP_RGB_blk_100317.svg"/>
+      {{ end }}
+    </a>
+  </div>
+  {{ end }}
+  {{ if .Params.buttonlink }}
+  <div class="column">
+    <a class="button is-link is-rounded" href="{{ .Params.buttonlink }}">
+      {{ .Params.buttontext }}
+    </a>
+  </div>
+  {{ end }}
+</div>

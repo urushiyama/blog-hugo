@@ -5,8 +5,8 @@
 <div class="hero-body">
 {{ end }}
   <div class="container">
-    {{ if .Params.image }}
     <div class="columns is-vcentered">
+      {{ if .Params.image }}
       <div class="column is-5 is-offset-1">
         {{ if .Params.catchcopy }}
         <h1 class="title is-1 is-bold is-spaced">
@@ -17,23 +17,12 @@
           {{ . }}
         </h2>
         {{ end }}
-        <p>
-          {{ if .Params.macappstorelink }}
-          <a href="{{ .Params.macappstorelink }}">
-            <img src="{{ .Site.BaseURL }}img/Download_on_the_Mac_App_Store_Badge_JP_RGB_blk_100317.svg"/>
-          </a>
-          {{ end }}
-          {{ if .Params.buttonlink }}
-          <a class="button is-link is-rounded" href="{{ .Params.buttonlink }}">
-            {{ .Params.buttontext }}
-          </a>
-          {{ end }}
-        </p>
+        {{ partial "hero-link" . }}
         {{ end }}
       </div>
       <div class="column is-5 is-offset-1">
         <figure class="image is-4by3">
-          <img src="{{ . }}" alt="Project Image">
+          <img src="{{ .Params.image }}" alt="Project Image" style="width: 100%; height: auto;%"/>
         </figure>
       </div>
       {{ else }}
@@ -47,21 +36,10 @@
           {{ . }}
         </h2>
         {{ end }}
-        <p>
-          {{ if .Params.macappstorelink }}
-          <a href="{{ .Params.macappstorelink }}">
-            <img src="{{ .Site.BaseURL }}img/Download_on_the_Mac_App_Store_Badge_JP_RGB_blk_100317.svg"/>
-          </a>
-          {{ end }}
-          {{ if .Params.buttonlink }}
-          <a class="button is-link is-rounded" href="{{ .Params.buttonlink }}">
-            {{ .Params.buttontext }}
-          </a>
-          {{ end }}
-        </p>
+        {{ partial "hero-link" . }}
         {{ end }}
       </div>
+      {{ end }}
     </div>
-    {{ end }}
   </div>
 </div>

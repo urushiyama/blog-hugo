@@ -1,7 +1,10 @@
 {{ partial "header" . }}
 <body>
 {{ partial "nav" . }}
-{{ partial "hero" .}}
+{{ if .IsTranslated }}
+{{ partial "translations" . }}
+{{ end }}
+{{ partial "hero" . }}
 <section class="section">
   <div class="container">
     <div class="content">
@@ -11,24 +14,6 @@
     {{ partial "sharing.html" . }}
     {{ end }}
   </div>
-  {{ if .IsTranslated }}
-  <div class="translations">
-    <span class="subtitle">Translations Available</span>
-    <ul>
-        {{ range .Translations }}
-        <li>
-            <a href="{{ .Permalink }}">
-              {{ if (eq .Lang "en") }}
-                English
-              {{ else }}
-                日本語
-              {{ end }}
-              : {{ .Title }}{{ if .IsPage }}{{ end }}</a>
-        </li>
-        {{ end}}
-    </ul>
-  </div>
-  {{ end }}
 </section>
 {{ partial "disqus" . }}
 {{ partial "footer" . }}

@@ -12,6 +12,7 @@ keywords:
     - "Kailh Low Profile (Choc) 対応"
     - "JIS配列"
 shorttitle: "MJ65"
+projectroot: true
 navigations:
     - title: "PCB"
       url: "https://github.com/urushiyama/MJ65-PCB"
