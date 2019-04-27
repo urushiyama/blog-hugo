@@ -11,11 +11,18 @@ keywords:
     - "プリント基板"
     - "Kailh Low Profile (Choc) 対応"
     - "JIS配列"
+shorttitle: "MJ65"
+navigations:
+    - title: "PCB"
+      url: "https://github.com/urushiyama/MJ65-PCB"
+    - title: "Plate"
+      url: "https://github.com/urushiyama/MJ65-Plate"
+    - title: "Firmware"
+      url: "https://github.com/urushiyama/qmk_firmware/tree/MJ65/keyboards/mj65"
+backgroundimage: "img/mj65.png"
+catchcopy: "MJ65 Keyboard"
+description: "The Keyboard of Mac JIS-layout Lovers, by Mac JIS-layout Lovers, for Mac JIS-layout Lovers."
 ---
-
-{{% card %}}
-![MJ65](img/mj65.png)
-{{% /card %}}
 
 MJ65は某🍎のJISキーボードに対するリスペクトとして設計した自作キーボードです．
 

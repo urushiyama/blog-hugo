@@ -1,27 +1,9 @@
 {{ partial "header" . }}
 <body>
 {{ partial "nav" . }}
+{{ partial "hero" .}}
 <section class="section">
   <div class="container">
-    <h1 class="title">{{ .Params.title }}</h1>
-    {{ if .IsTranslated }}
-    <div class="translations">
-      <span class="subtitle">Translations Available</span>
-      <ul>
-          {{ range .Translations }}
-          <li>
-              <a href="{{ .Permalink }}">
-                {{ if (eq .Lang "en") }}
-                  English
-                {{ else }}
-                  日本語
-                {{ end }}
-                : {{ .Title }}{{ if .IsPage }}{{ end }}</a>
-          </li>
-          {{ end}}
-      </ul>
-    </div>
-    {{ end }}
     <div class="content">
       {{ .Content }}
     </div>
@@ -29,6 +11,24 @@
     {{ partial "sharing.html" . }}
     {{ end }}
   </div>
+  {{ if .IsTranslated }}
+  <div class="translations">
+    <span class="subtitle">Translations Available</span>
+    <ul>
+        {{ range .Translations }}
+        <li>
+            <a href="{{ .Permalink }}">
+              {{ if (eq .Lang "en") }}
+                English
+              {{ else }}
+                日本語
+              {{ end }}
+              : {{ .Title }}{{ if .IsPage }}{{ end }}</a>
+        </li>
+        {{ end}}
+    </ul>
+  </div>
+  {{ end }}
 </section>
 {{ partial "disqus" . }}
 {{ partial "footer" . }}

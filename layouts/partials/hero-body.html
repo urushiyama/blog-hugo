@@ -1,0 +1,67 @@
+{{ with .Params.backgroundimage }}
+<div class="hero-body has-background">
+<img class="background-image is-whiter" src="{{ . }}"/>
+{{ else }}
+<div class="hero-body">
+{{ end }}
+  <div class="container">
+    {{ if .Params.image }}
+    <div class="columns is-vcentered">
+      <div class="column is-5 is-offset-1">
+        {{ if .Params.catchcopy }}
+        <h1 class="title is-1 is-bold is-spaced">
+          {{ .Params.catchcopy }}
+        </h1>
+        {{ with .Params.description }}
+        <h2 class="subtitle is-5 is-muted">
+          {{ . }}
+        </h2>
+        {{ end }}
+        <p>
+          {{ if .Params.macappstorelink }}
+          <a href="{{ .Params.macappstorelink }}">
+            <img src="{{ .Site.BaseURL }}img/Download_on_the_Mac_App_Store_Badge_JP_RGB_blk_100317.svg"/>
+          </a>
+          {{ end }}
+          {{ if .Params.buttonlink }}
+          <a class="button is-link is-rounded" href="{{ .Params.buttonlink }}">
+            {{ .Params.buttontext }}
+          </a>
+          {{ end }}
+        </p>
+        {{ end }}
+      </div>
+      <div class="column is-5 is-offset-1">
+        <figure class="image is-4by3">
+          <img src="{{ . }}" alt="Project Image">
+        </figure>
+      </div>
+      {{ else }}
+      <div class="column is-10 is-offset-1 has-text-centered">
+        {{ if .Params.catchcopy }}
+        <h1 class="title is-1 is-bold is-spaced">
+          {{ .Params.catchcopy }}
+        </h1>
+        {{ with .Params.description }}
+        <h2 class="subtitle is-5 is-muted">
+          {{ . }}
+        </h2>
+        {{ end }}
+        <p>
+          {{ if .Params.macappstorelink }}
+          <a href="{{ .Params.macappstorelink }}">
+            <img src="{{ .Site.BaseURL }}img/Download_on_the_Mac_App_Store_Badge_JP_RGB_blk_100317.svg"/>
+          </a>
+          {{ end }}
+          {{ if .Params.buttonlink }}
+          <a class="button is-link is-rounded" href="{{ .Params.buttonlink }}">
+            {{ .Params.buttontext }}
+          </a>
+          {{ end }}
+        </p>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
