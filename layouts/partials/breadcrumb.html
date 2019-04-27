@@ -1,19 +1,21 @@
-<nav class="breadcrumb is-small" aria-label="breadcrumbs">
-  <ul>
-    <li><a href="{{ .Site.BaseURL }}{{with .Site.Params.languageURL}}{{ . }}/{{ end }}">{{ .Site.Title }}</a></li>
-    {{ if eq .Page.Section "posts" }}
-    <li><a href="{{ .Site.BaseURL }}{{with .Site.Params.languageURL}}{{ . }}/{{ end }}posts">{{ .Page.Section | humanize }}</a></li>
-    {{ end }}
-    <li class="is-active">
-      <a href="#" aria-current="page">
-        {{ if .Title }}
-        {{ .Title }}
-        {{ else if .Page.Title }}
-        {{ .Page.Title }}
-        {{ else }}
-        .
-        {{ end }}
-      </a>
-    </li>
-  </ul>
-</nav>
+<div class="container">
+  <nav class="breadcrumb is-small" aria-label="breadcrumbs">
+    <ul>
+      <li><a href="{{ .Site.BaseURL }}{{with .Site.Params.languageURL}}{{ . }}/{{ end }}">{{ .Site.Title }}</a></li>
+      {{ if eq .Page.Section "posts" }}
+      <li><a href="{{ .Site.BaseURL }}{{with .Site.Params.languageURL}}{{ . }}/{{ end }}posts">{{ .Page.Section | humanize }}</a></li>
+      {{ end }}
+      <li class="is-active">
+        <a href="#" aria-current="page">
+          {{ if .Title }}
+          {{ .Title }}
+          {{ else if .Page.Title }}
+          {{ .Page.Title }}
+          {{ else }}
+          .
+          {{ end }}
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
