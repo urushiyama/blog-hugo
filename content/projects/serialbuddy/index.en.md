@@ -25,7 +25,7 @@ image: "img/MacBookPro.png"
 backgroundimage: "img/SerialBuddy-bg.png"
 catchcopy: "Buddy for Serial Communication Came."
 description: "The serial communication app with console, plot, and analyzer for Mac."
-# macappstorelink: "/"
+macappstorelink: "https://itunes.apple.com/us/app/serialbuddy/id1461672018"
 ---
 
 How do you debug serial communication while developing with micro-controllers?

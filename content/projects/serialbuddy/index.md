@@ -25,7 +25,7 @@ image: "img/MacBookPro.png"
 backgroundimage: "img/SerialBuddy-bg.png"
 catchcopy: "シリアル通信デバッグの相棒，参上．"
 description: "コンソール，グラフプロット，通信分析をすべて揃えたMacのためのシリアル通信アプリ"
-# macappstorelink: "/"
+macappstorelink: "https://itunes.apple.com/jp/app/serialbuddy/id1461672018"
 ---
 
 Macでマイコンボードの開発につかうシリアル通信．どんな方法でデバッグしていますか？
