@@ -2,6 +2,7 @@
 title: "Apple Watchアプリでプログラムによるページ遷移を行う2つの方法"
 date: 2018-08-02T19:31:24+09:00
 draft: false
+paginatable: true
 tags:
     - "WatchOS"
     - "アプリ開発"

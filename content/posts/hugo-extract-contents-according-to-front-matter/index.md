@@ -2,6 +2,7 @@
 title: "Front Matterに基づいてHugoのコンテンツ（ページ）を抽出する"
 date: 2019-03-30T21:10:01+09:00
 draft: false
+paginatable: true
 tags:
     - "Hugo"
 keywords:

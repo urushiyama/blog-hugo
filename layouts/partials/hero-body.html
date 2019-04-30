@@ -1,6 +1,6 @@
-{{ with .Params.backgroundimage }}
+{{ if .Params.backgroundimage }}
 <div class="hero-body has-background">
-<img class="background-image is-whiter" src="{{ . }}"/>
+<img class="background-image is-whiter" src="{{ .Site.BaseURL }}{{ .File.Dir }}{{ .Params.backgroundimage }}"/>
 {{ else }}
 <div class="hero-body">
 {{ end }}
@@ -22,7 +22,7 @@
       </div>
       <div class="column is-5 is-offset-1">
         <figure class="image is-4by3">
-          <img src="{{ .Params.image }}" alt="Project Image" style="width: 100%; height: auto;%"/>
+          <img src="{{ .Site.BaseURL }}{{ .File.Dir }}{{ .Params.image }}" alt="Project Image" style="width: 100%; height: auto;%"/>
         </figure>
       </div>
       {{ else }}

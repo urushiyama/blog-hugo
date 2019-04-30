@@ -3,10 +3,10 @@
     <div class="navbar-brand">
       {{ if .Params.projecticon }}
       {{ if .Params.projectroot }}
-      <a class="navbar-item" href="#"><img src="{{ .Params.projecticon }}" style="height: 100%; width: auto;"/></a>
+      <a class="navbar-item" href="#"><img src="{{ .Site.BaseURL }}{{ .File.Dir }}{{ .Params.projecticon }}" style="height: 100%; width: auto;"/></a>
       <a class="navbar-item" href="#"><span class="title is-4">{{ .Params.shorttitle }}</span></a>
       {{ else }}
-      <a class="navbar-item" href="../"><img src="{{ .Params.projecticon }}" style="height: 100%; width: auto;"/></a>
+      <a class="navbar-item" href="../"><img src="{{ .Site.BaseURL }}{{ .File.Dir }}{{ .Params.projecticon }}" style="height: 100%; width: auto;"/></a>
       <a class="navbar-item" href="../"><span class="title is-4">{{ .Params.shorttitle }}</span></a>
       {{ end }}
       {{ else if .Params.shorttitle }}

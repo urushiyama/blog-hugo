@@ -2,6 +2,7 @@
 title: "My First Post with Hugo"
 date: 2018-04-30T07:09:32+09:00
 draft: false
+paginatable: true
 tags:
     - "First"
     - "Hugo"

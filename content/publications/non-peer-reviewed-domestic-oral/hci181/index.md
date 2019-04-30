@@ -2,6 +2,7 @@
 title: "指の軌跡に基づくモバイル端末向けアイズフリーかな文字入力の提案（HCI181）"
 date: 2019-01-14T00:00:00+09:00
 draft: false
+paginatable: true
 url_pdf: https://ipsj.ixsq.nii.ac.jp/ej/?action=repository_uri&item_id=193939&file_id=1&file_no=1
 # url_doi: /#
 # url_bib: /#

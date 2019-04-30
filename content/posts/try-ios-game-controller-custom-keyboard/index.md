@@ -2,6 +2,7 @@
 title: "ゲームコントローラで操作できるiOSカスタムキーボードをつくろうと（して挫折）した話"
 date: 2018-05-13T20:23:00+09:00
 draft: false
+paginatable: true
 tags:
     - "iOS"
     - "カスタムキーボード"

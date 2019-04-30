@@ -3,6 +3,7 @@ title: "東方風神録をParallels Desktop 13+SteelSeries Nimbusコントロー
 date: 2018-05-05T13:12:28+09:00
 lastmod: 2018-05-11T16:16:03+09:00
 draft: false
+paginatable: true
 tags:
     - "東方"
     - "ゲーム"

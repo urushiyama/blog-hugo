@@ -2,6 +2,7 @@
 title: "Support"
 date: 2019-04-27T20:15:50+09:00
 draft: false
+type: "serialbuddy"
 projecticon: "../img/SerialBuddy.svg"
 shorttitle: "SerialBuddy"
 navigations:

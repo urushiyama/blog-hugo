@@ -2,6 +2,7 @@
 title: "Privacy Policy"
 date: 2019-04-27T22:26:36+09:00
 draft: false
+type: "serialbuddy"
 projecticon: "../img/SerialBuddy.svg"
 shorttitle: "SerialBuddy"
 navigations:

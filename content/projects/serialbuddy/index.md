@@ -2,6 +2,7 @@
 title: "SerialBuddy"
 date: 2019-04-27T19:44:32+09:00
 draft: false
+type: "projects"
 tags:
     - "シリアル通信"
     - "MacOS アプリ"
@@ -12,6 +13,7 @@ keywords:
     - "スペクトル"
     - "分析"
 projectroot: true
+paginatable: true
 projecticon: "img/SerialBuddy.svg"
 shorttitle: "SerialBuddy"
 navigations:

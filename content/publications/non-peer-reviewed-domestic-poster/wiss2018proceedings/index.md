@@ -2,6 +2,7 @@
 title: "指の軌跡に基づく手元の視認が不要なスマートフォン向けかな文字入力手法（WISS2018）"
 date: 2018-09-27T00:00:00+09:00
 draft: false
+paginatable: true
 url_pdf: https://www.wiss.org/WISS2018Proceedings/demo/1-A07.pdf
 # url_doi: /#
 # url_bib: /#

@@ -2,6 +2,7 @@
 title: "Sample Publication"
 date: 2018-05-03T19:33:58+09:00
 draft: true
+paginatable: true
 url_pdf: http://localhost:1313
 url_doi: http://localhost:1313
 url_bib: http://localhost:1313

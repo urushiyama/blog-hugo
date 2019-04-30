@@ -2,6 +2,7 @@
 title: "BibTeXの罠"
 date: 2018-05-07T01:46:00+09:00
 draft: false
+paginatable: true
 tags:
     - "BibTeX"
     - "TeX"

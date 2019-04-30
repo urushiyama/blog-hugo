@@ -44,11 +44,13 @@
 <link rel="shortcut icon" href="{{ .Site.BaseURL }}avatar.ico">
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 {{ with .Site.Params.highlight.style }}
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/{{ . }}.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/{{ . }}.min.css">
 {{ else }}
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css" integrity="sha256-Zd1icfZ72UBmsId/mUcagrmN7IN5Qkrvh75ICHIQVTk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css" integrity="sha384-ut3ELVx81ErZQaaMTknSmGb0CEGAKoBFTamRcY1ddG4guN0aoga4C+B6B7Kv1Ll1" crossorigin="anonymous">
 {{ end }}
 {{ if .IsHome }}
 <meta name="google-site-verification" content="yvbo1Z8dYxbPOZgDtQmk0KIl8gqC36ggyi0jcb3dcOA" />
 {{ end }}
+<meta name="hugo:section" content="{{ .Page.Section }}"/>
+<meta name="hugo:type" content="{{ .Page.Type }}"/>
 </head>

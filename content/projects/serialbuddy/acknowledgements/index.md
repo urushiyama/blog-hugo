@@ -1,7 +1,8 @@
 ---
 title: "Acknowledgements"
 date: 2019-04-27T22:26:20+09:00
-draft: false
+draft: false]
+type: "serialbuddy"
 projecticon: "../img/SerialBuddy.svg"
 shorttitle: "SerialBuddy"
 navigations:

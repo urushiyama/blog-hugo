@@ -12,6 +12,7 @@ keywords:
     - "spectrum"
     - "analyze"
 projectroot: true
+paginatable: true
 projecticon: "img/SerialBuddy.svg"
 shorttitle: "SerialBuddy"
 navigations:

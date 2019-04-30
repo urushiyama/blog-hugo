@@ -2,6 +2,7 @@
 title: "A Design of Eyes-Free Kana Entry Method Utilizing Single Stroke for Mobile Devices"
 date: 2019-03-29T09:30:00+09:00
 draft: false
+paginatable: true
 # url_pdf: /#
 # url_doi: /#
 # url_bib: /#

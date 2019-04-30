@@ -3,6 +3,7 @@ title: "新規作成したApple IDでApple Developer Programに登録する際�
 date: 2018-09-02T01:59:52+09:00
 lastmod: 2018-09-04T11:19:00+09:00
 draft: false
+paginatable: true
 tags:
     - "アプリ開発"
 keywords:

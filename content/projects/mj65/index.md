@@ -2,6 +2,8 @@
 title: "MJ65: the Keyboard of Mac JIS-layout Lovers, by Mac JIS-layout Lovers, for Mac JIS-layout Lovers."
 date: 2019-03-11T02:02:08+09:00
 draft: false
+paginatable: true
+type: "projects"
 tags:
     - "自作キーボード"
     - "JIS配列"
