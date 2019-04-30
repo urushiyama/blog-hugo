@@ -23,6 +23,8 @@ navigations:
     - title: "Firmware"
       url: "https://github.com/urushiyama/qmk_firmware/tree/MJ65/keyboards/mj65"
 backgroundimage: "img/mj65.png"
+twittercardtype: "summary_large_image"
+ogimage: "img/mj65.png"
 catchcopy: "MJ65 Keyboard"
 description: "The Keyboard of Mac JIS-layout Lovers, by Mac JIS-layout Lovers, for Mac JIS-layout Lovers."
 ---

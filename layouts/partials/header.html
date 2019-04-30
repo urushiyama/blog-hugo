@@ -25,11 +25,33 @@
 <meta content='{{ .Scratch.Get "keywords" }}' name="keywords">
 <meta content="{{ .Site.Params.Author }}" name="author">
 <meta content='{{ .Scratch.Get "desc" }}' name="description">
-<meta property="og:site_name" content="{{ .Site.Title }}" />
+{{ with .Params.twittercardtype }}
+<meta name="twitter:card" content="{{ . }}">
+{{ else }}
+<meta name="twitter:card" content="summary">
+{{ end }}
+<meta property="og:site_name" content="{{ .Site.Title }}">
 <meta property="og:title" content='{{ .Scratch.Get "title" }}'>
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:description" content='{{ .Scratch.Get "desc" }}'>
-<meta property="og:type" content='{{ .Scratch.Get "type" }}' />
+<meta property="og:type" content='{{ .Scratch.Get "type" }}'>
+{{ if .Params.ogimage }}
+<meta property="og:image" content="{{ .Site.BaseURL }}{{ .File.Dir }}{{ .Params.ogimage }}">
+{{ end }}
+{{ if eq .Params.twittercardtype "app" }}
+  {{ if .Params.apps }}
+    {{ with .Params.appcountry }}
+    <meta name="twitter:app:country" content="{{ . }}">
+    {{ end }}
+    {{ range $app := .Params.apps }}
+    <meta name="twitter:app:name:{{ index $app "target" }}" content="{{ index $app "name" }}">
+    <meta name="twitter:app:id:{{ index $app "target" }}" content="{{ index $app "id" }}">
+      {{ if index $app "url" }}
+      <meta name="twitter:app:url:{{ index $app "target" }}" content="{{ index $app "url" }}">
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
 <title>{{ .Scratch.Get "title" }}</title>
 <!-- enable inline math equations-->
 <script type="text/x-mathjax-config">
