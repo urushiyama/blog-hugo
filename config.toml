@@ -10,6 +10,7 @@ copyright = "&copy; 2018-2019 urushiyama | Powered by [Hugo](https://gohugo.io) 
 googleAnalytics = "UA-118350112-1"
 enableRobotsTXT = true
 paginate = 3
+enableEmoji = true
 
 [params]
 description = ""
@@ -19,7 +20,7 @@ sharingicons = true
 
 [params.highlight]
 style = "tomorrow"
-languages = ["plaintext", "arduino", "erb", "go", "r", "swift", "tex", "yaml"]
+languages = ["plaintext", "arduino", "cpp", "erb", "go", "r", "swift", "tex", "yaml"]
 
 [params.image]
 url = "img/photo.png"
