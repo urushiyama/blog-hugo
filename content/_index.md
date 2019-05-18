@@ -57,7 +57,7 @@ WAVEチーム
 
 <dl>
   <dt>2016年</dt>
-    <dd>2016年度Science＆IT海外派遣プログラム
+    <dd>2016年度Science＆IT海外派遣プログラム，August 22 - September 10, 2016 (Local time)，Berkeley, CA, U.S.A.
   <dt>2017年</dt>
     <dd>enPiT-BizSysD 筑波大ワークショップ, <a href="https://github.com/enpitut2017/Regi-Urico-api">在庫通知機能を備えたレジアプリのスクラム開発</a></dd>
 </dl>
@@ -87,5 +87,5 @@ WAVEチーム
     <dd>筑波大学 情報学群 情報メディア創成学類 入学</dd>
   <dt>2019年</dt>
     <dd>筑波大学 情報学群 情報メディア創成学類 卒業</dd>
-    <dd>筑波大学 大学院 システム情報工学研究科 コンピュータサイエンス専攻 <u>入学見込</u></dd>
+    <dd>筑波大学 大学院 システム情報工学研究科 コンピュータサイエンス専攻 入学</dd>
 </dl>

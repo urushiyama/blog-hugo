@@ -51,5 +51,5 @@ Ibaraki 305-8573, Japan
     <dd>I entered College of Media Arts, Science and Technology, School of Informatics, University of Tsukuba.</dd>
   <dt>2019</dt>
     <dd>I finished College of Media Arts, Science and Technology, School of Informatics, University of Tsukuba.</dd>
-    <dd>I <u>will enter</u> Department of Computer Science, Graduate School of Systems and Information Engineering, University of Tsukuba.</dd>
+    <dd>I entered Department of Computer Science, Graduate School of Systems and Information Engineering, University of Tsukuba.</dd>
 </dl>
