@@ -28,7 +28,7 @@ twittercardtype: "summary_large_image"
 ogimage: "img/BarCounter.png"
 catchcopy: "Count Words on Menu Bar"
 description: "All you need to do is just copy text."
-# macappstorelink: "https://itunes.apple.com/jp/app/barcounter/id??????????"
+macappstorelink: "https://itunes.apple.com/jp/app/barcounter/id1464372559"
 ---
 
 "Answer the question within xxx words", "Write more than xxx words", "Keep the abstract within xxx words", ...

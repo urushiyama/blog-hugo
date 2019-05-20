@@ -28,7 +28,7 @@ twittercardtype: "summary_large_image"
 ogimage: "img/BarCounter.png"
 catchcopy: "メニューバーで，文字数を数えよう．"
 description: "必要なのは，コピーするだけ．文章執筆のお供にどうぞ．"
-# macappstorelink: "https://itunes.apple.com/jp/app/barcounter/id??????????"
+macappstorelink: "https://itunes.apple.com/jp/app/barcounter/id1464372559"
 ---
 
 「〇〇文字以内で回答しなさい」，「〇〇文字以上記述しなさい」，「概要は〇〇文字以内で」．．．
