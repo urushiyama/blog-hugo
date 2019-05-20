@@ -3,7 +3,7 @@ $primary: $blue
 $grey-dark: #42464c
 $family-sans-serif: -apple-system, blinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', YuGothicM, YuGothic, Meiryo, sans-serif
 $family-serif: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif
-$family-monospace: "Courier New", Consolas, monospace
+$family-monospace: Consolas, 'Courier New', Courier, Monaco, monospace
 
 @import "../node_modules/bulma/bulma"
 
@@ -185,6 +185,7 @@ article+article
         text-overflow: ellipsis
 
   & > code, p > code, li > code
+    font-family: $family-monospace
     font-size: 90%
     padding: 2px 4px
     margin: 0 2px

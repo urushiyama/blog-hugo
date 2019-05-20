@@ -9,7 +9,7 @@ copyright = "&copy; 2018-2019 urushiyama | Powered by [Hugo](https://gohugo.io) 
 # enableGitInfo = true
 googleAnalytics = "UA-118350112-1"
 enableRobotsTXT = true
-paginate = 3
+paginate = 5
 enableEmoji = true
 
 [params]
