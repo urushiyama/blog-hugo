@@ -1,5 +1,29 @@
+{{ if .Params.projectroot }}
+{{ partial "header" . }}
+<body>
+{{ partial "nav" . }}
+{{ if .IsTranslated }}
+{{ partial "translations" . }}
+{{ end }}
+<section class="section">
+  <div class="container">
+    <h1 class="title">{{ .Params.reference }}</h1>
+    {{ partial "iconlinks" . }}
+    <div class="content">
+      {{ .Content }}
+    </div>
+    {{ if (ne ($.Param "sharingicons") false) }}
+    {{ partial "sharing.html" . }}
+    {{ end }}
+  </div>
+</section>
+{{ partial "disqus" . }}
+{{ partial "footer" . }}
+</body>
+{{ else }}
 {{ partial "header" . }}
 {{ partial "nav" . }}
 {{ partial "paginator" (dict "c" . "PaginateSection" "publications") }}
 {{ partial "pager" . }}
 {{ partial "footer" . }}
+{{ end }}
