@@ -21,3 +21,8 @@ https://marshmallow-qa.com/yurushiyama?utm_medium=url_text&utm_source=promotion
 
 あるいは，Twitterのダイレクトメッセージ（DM）でも受け付けます：  
 https://twitter.com/YUrushiyama
+
+メールでも受け付けますが，返信が遅くなる場合があります[^1]：  
+aswif10flis1ntkb [at] gmail.com
+
+[^1]: [at]はアットマーク（@）に置き換えてください．

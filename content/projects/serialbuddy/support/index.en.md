@@ -21,3 +21,8 @@ https://marshmallow-qa.com/yurushiyama?utm_medium=url_text&utm_source=promotion
 
 Alternatively, we accept Twitter's direct message (DM):  
 https://twitter.com/YUrushiyama
+
+You can text me from the address below, but it may take a longer time to get the reply[^1]：  
+aswif10flis1ntkb [at] gmail.com
+
+[^1]: Please replace [at] to @.
