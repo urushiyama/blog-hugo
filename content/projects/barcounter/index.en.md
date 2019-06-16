@@ -22,6 +22,8 @@ navigations:
       url: "support/"
     - title: "Privacy Policy"
       url: "privacy-policy/"
+    - title: "Release Note"
+      url: "release-note/"
 image: "img/BarCounter.png"
 backgroundimage: "img/BarCounter-bg.png"
 twittercardtype: "summary_large_image"
@@ -49,5 +51,5 @@ Because this app uses the text in the clipboard, it is able to count the text co
 
 I welcome your bug reports and advice on the app including feature improvements at [Support links](support/).
 
-> "Mac" is a registered trademark of Apple Inc．
+> "Mac" is a registered trademark of Apple Inc．  
 > All rights of devices' images and of the "Download from Mac App Store" banner is held by Apple Inc．

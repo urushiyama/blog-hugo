@@ -12,6 +12,8 @@ navigations:
       url: "../privacy-policy/"
     - title: "Acknowledgements"
       url: "#"
+    - title: "Release Note"
+      url: "../release-note/"
 ---
 
 SerialBuddy is made by the following third-party libraries.

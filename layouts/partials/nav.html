@@ -18,6 +18,13 @@
       {{ else }}
       <a class="navbar-item" href="{{ .Site.BaseURL }}{{with .Site.Params.languageURL}}{{ . }}{{ end }}"><span class="title is-4">{{ .Site.Title }}</span></a>
       {{ end }}
+      {{ if .Params.navigations }}
+      <a class="navbar-item is-hidden-desktop" href="{{ .Site.BaseURL }}{{with .Site.Params.languageURL}}{{ . }}{{ end }}">
+        <span class="icon">
+          <i class="fa fa-home"></i>
+        </span>
+      </a>
+      {{ end }}
       {{ range .Site.Params.social }}
       <a class="navbar-item is-hidden-desktop" href="{{ .url }}" target="_blank">
         <span class="icon">

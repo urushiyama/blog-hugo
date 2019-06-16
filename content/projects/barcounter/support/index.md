@@ -10,6 +10,8 @@ navigations:
       url: "#"
     - title: "Privacy Policy"
       url: "../privacy-policy/"
+    - title: "Release Note"
+      url: "../release-note/"
 ---
 
 - コメントにはアプリ名を合わせてご記入ください．

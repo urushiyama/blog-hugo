@@ -12,6 +12,8 @@ navigations:
       url: "#"
     - title: "Acknowledgements"
       url: "../acknowledgements/"
+    - title: "Release Note"
+      url: "../release-note/"
 ---
 
 # SerialBuddy Privacy Policy

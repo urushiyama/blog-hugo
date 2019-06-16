@@ -12,6 +12,8 @@ navigations:
       url: "../privacy-policy/"
     - title: "Acknowledgements"
       url: "#"
+    - title: "Release Note"
+      url: "../release-note/"
 ---
 
 SerialBuddyは以下のサードパーティ製ライブラリによって支えられています．

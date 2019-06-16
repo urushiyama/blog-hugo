@@ -22,6 +22,8 @@ navigations:
       url: "privacy-policy/"
     - title: "Acknowledgements"
       url: "acknowledgements/"
+    - title: "Release Note"
+      url: "release-note/"
 image: "img/MacBookPro.png"
 backgroundimage: "img/SerialBuddy-bg.png"
 twittercardtype: "summary_large_image"

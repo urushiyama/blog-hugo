@@ -12,6 +12,8 @@ navigations:
       url: "../privacy-policy/"
     - title: "Acknowledgements"
       url: "../acknowledgements/"
+    - title: "Release Note"
+      url: "../release-note/"
 ---
 
 - Please add the application name in your comment.

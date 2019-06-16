@@ -10,6 +10,8 @@ navigations:
       url: "#"
     - title: "Privacy Policy"
       url: "../privacy-policy/"
+    - title: "Release Note"
+      url: "../release-note/"
 ---
 
 - Please add the application name in your comment.

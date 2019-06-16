@@ -22,6 +22,8 @@ navigations:
       url: "support/"
     - title: "Privacy Policy"
       url: "privacy-policy/"
+    - title: "Release Note"
+      url: "release-note/"
 image: "img/BarCounter.png"
 backgroundimage: "img/BarCounter-bg.png"
 twittercardtype: "summary_large_image"
@@ -50,5 +52,5 @@ Wordやテキストエディタを使っているなら簡単に文字数を数�
 バグ報告，機能改善を含むアプリに関するアドバイスを以下のリンク先にて受け付けています：
 https://urushiyama.github.io/en/projects/barcounter/support/
 
-> MacはApple社の登録商標です．
+> MacはApple社の登録商標です．  
 > 使用している機器および"Download from Mac App Store"の画像の権利はApple社に帰属します．
