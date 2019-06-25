@@ -18,6 +18,14 @@ navigations:
 
 # Release Note
 
+## v1.2.0
+
+For who this app did not work.
+
+NEW FEATURE：
+
+- Enable to change serial communication library for more connectivity (available via Preferences window)
+
 ## v1.1.0
 
 Self-Configuration is often more ridiculous than omnipotent.
