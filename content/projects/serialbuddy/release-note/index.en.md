@@ -25,6 +25,7 @@ For who this app did not work.
 NEW FEATURE：
 
 - Enable to change serial communication library for more connectivity (available via Preferences window)
+- Enable to limit/clear console
 
 ## v1.1.0
 
