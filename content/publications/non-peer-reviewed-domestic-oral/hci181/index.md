@@ -8,7 +8,7 @@ url_pdf: https://ipsj.ixsq.nii.ac.jp/ej/?action=repository_uri&item_id=193939&fi
 # url_bib: /#
 # url_project: /#
 # url_repo: /#
-reference: 漆山裕太，中村拓人，志築文太郎．指の軌跡に基づくモバイル端末向けアイズフリーかな文字入力の提案．情報処理学会研究報告，Vol. 2019-HCI-181，No. 30，情報処理学会，2019年1月，8 pages．
+reference: <u>漆山裕太</u>，中村拓人，志築文太郎．指の軌跡に基づくモバイル端末向けアイズフリーかな文字入力の提案．情報処理学会研究報告，Vol. 2019-HCI-181，No. 30，情報処理学会，2019年1月，8 pages．
 tags:
     - "HCI研究会"
 keywords:
