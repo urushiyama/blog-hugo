@@ -42,6 +42,7 @@ WAVEチーム
 
 - Human Computer Interface (HCI)
 - User Interface (UI)
+- Seamless Interaction
 - Eyes-free Interaction
 - Text Input Methods
 

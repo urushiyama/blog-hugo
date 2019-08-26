@@ -1,5 +1,5 @@
 {{ partial "header" . }}
 {{ partial "nav" . }}
-{{ partial "paginator" (dict "c" .) }}
+{{ partial "paginator" (dict "c" . "PaginateSection" "posts") }}
 {{ partial "pager" . }}
 {{ partial "footer" . }}

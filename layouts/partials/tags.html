@@ -1,5 +1,5 @@
 <div class="tags">
     {{ range . }}
-        <a class="tag is-rounded" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+        {{ partial "tag" . }}
     {{ end }}
 </div>

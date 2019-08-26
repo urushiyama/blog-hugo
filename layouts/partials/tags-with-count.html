@@ -1,0 +1,10 @@
+<div class="field is-grouped is-grouped-multiline">
+  {{ range $key, $value := . }}
+  <div class="control">
+    <span class="tags has-addons is-rounded">
+      <a class="tag" href="{{ "/tags/" | relLangURL }}{{ $key | urlize }}">{{ $key }}</a>
+      <span class="tag is-primary">{{ len $value }}</span>
+    </span>
+  </div>
+  {{ end }}
+</div>

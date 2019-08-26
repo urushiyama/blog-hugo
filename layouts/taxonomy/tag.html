@@ -1,0 +1,24 @@
+{{ partial "header" . }}
+<body>
+{{ partial "nav" . }}
+<section class="section">
+  <div class="container">
+    <div class="title center">{{ .Title }}</div>
+    <div class="content">
+      <ul>
+        {{ range .Data.Pages }}
+        {{ partial "list-item-box" . }}
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="title center"><a href="{{ .Site.BaseURL }}/tags">Tags</a></div>
+    {{ partial "tags-with-count" .Site.Taxonomies.tags }}
+  </div>
+</section>
+{{ partial "disqus" . }}
+{{ partial "footer" . }}
+</body>

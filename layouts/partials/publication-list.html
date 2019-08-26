@@ -16,7 +16,7 @@
           <ol>
           {{ range $peerReviewedInternationalPoster }}
             <li>
-              <a href="{{ .Permalink }}">{{ .Params.reference| safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}
+              <a href="{{ .Permalink }}">{{ .Params.reference | safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}
               {{ partial "iconlinks" . }}
             </li>
           {{ end }}
