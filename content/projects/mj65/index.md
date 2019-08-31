@@ -35,6 +35,8 @@ description: "The Keyboard of Mac JIS-layout Lovers, by Mac JIS-layout Lovers, f
 
 MJ65は某🍎のJISキーボードに対するリスペクトとして設計した自作キーボードです．
 
+<!--more-->
+
 ざっくり以下の特長を持ちます：
 
 - Cherry MX互換，Alps互換，Kailh Chocスイッチに対応

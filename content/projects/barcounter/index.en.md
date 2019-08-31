@@ -33,6 +33,10 @@ description: "All you need to do is just copy text."
 macappstorelink: "https://itunes.apple.com/jp/app/barcounter/id1464372559"
 ---
 
+BarCounter is the Mac app to display the number of words/characters in the copied text on the menu bar.
+
+<!--more-->
+
 "Answer the question within xxx words", "Write more than xxx words", "Keep the abstract within xxx words", ...
 There are many restrictions to overcome for resting your hands.
 When using Word or other text editors, it is easy to check the count of words, while when using Excel, mail apps, or online forms, it is not so easy.
