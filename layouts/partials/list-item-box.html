@@ -19,7 +19,7 @@
         {{ else }}
           <h3 class="title"><a href="{{ .Permalink }}">{{ .Params.title | safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}</h3>
         {{ end }}
-        <h4 class="subtitle is-5">
+        <h4 class="subtitle is-6">
         {{ if eq (.Date.Format "January 2, 2006") (.Lastmod.Format "January 2, 2006") }}
           {{ .Date.Format "January 2, 2006" }}
         {{ else }}
@@ -46,13 +46,13 @@
 </article>
 {{ else }}
 <article class="column is-12">
-  <div class="box content control has-addons">
+  <div class="box">
     {{ if eq .Section "publications" }}
     <h3 class="title"><a href="{{ .Permalink }}">{{ .Params.reference | safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}</h3>
     {{ partial "iconlinks" . }}
     {{ else }}
     <h3 class="title"><a href="{{ .Permalink }}">{{ .Params.title | safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}</h3>
-    <h4 class="subtitle is-5">
+    <h4 class="subtitle is-6">
       {{ if eq (.Date.Format "January 2, 2006") (.Lastmod.Format "January 2, 2006") }}
       {{ .Date.Format "January 2, 2006" }}
       {{ else }}
