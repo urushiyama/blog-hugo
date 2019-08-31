@@ -5,6 +5,9 @@ $family-sans-serif: -apple-system, blinkMacSystemFont, 'Helvetica Neue', 'Segoe 
 $family-serif: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif
 $family-monospace: Consolas, 'Courier New', Courier, Monaco, monospace
 
+$box-shadow: none
+$card-shadow: none
+
 @import "../node_modules/bulma/bulma"
 
 // .container
@@ -204,10 +207,10 @@ article+article
     table
       margin-bottom: 1.5em
   .card
-    margin: 16px
-    background-color: #f8f8f8
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4)
-    padding: 8px
+    // margin: 16px
+    // background-color: #f8f8f8
+    // box-shadow: 0 0 8px rgba(0, 0, 0, 0.4)
+    // padding: 8px
     display: inline-block
     border-radius: 6px
     p
@@ -217,6 +220,8 @@ article+article
     code,
     tr
       background-color: transparent
+  figure
+    margin: 0px
 
 .paginate
   .title

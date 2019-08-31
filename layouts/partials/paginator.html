@@ -1,12 +1,14 @@
 {{ if where .c.Site.Pages "Type" .PaginateSection }}
 <section class="section">
   <div class="container paginator">
-    <h2 class="title center"><a href="{{ .c.Site.BaseURL }}{{with .Site.Params.languageURL}}{{ . }}{{ end }}{{ .PaginateSection }}">{{ title .PaginateSection }}</a></h2>
-    <div class="columns is-multiline">
-      {{ $paginator := .c.Paginate (where .c.Site.Pages "Type" .PaginateSection) }}
-      {{ range (where $paginator.Pages "Params.paginatable" "=" true ) }}
-      {{ partial "list-item-box" . }}
-      {{ end }}
+    <div class="content">
+      <h2 class="title"><a href="{{ .c.Site.BaseURL }}{{with .Site.Params.languageURL}}{{ . }}{{ end }}{{ .PaginateSection }}">{{ title .PaginateSection }}</a></h2>
+      <div class="columns is-multiline">
+        {{ $paginator := .c.Paginate (where .c.Site.Pages "Type" .PaginateSection) }}
+        {{ range (where $paginator.Pages "Params.paginatable" "=" true ) }}
+        {{ partial "list-item-box" . }}
+        {{ end }}
+      </div>
     </div>
   </div>
 </section>

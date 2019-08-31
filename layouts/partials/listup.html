@@ -1,11 +1,13 @@
 {{ if where .c.Data.Pages "Type" .Section }}
 <section class="section">
-  <h2 class="title center" id="{{ .Section }}"><a href="{{ .BaseURL | absLangURL }}{{ .Section }}">{{ title .Section }}</a></h2>
   <div class="container">
-    <div class="columns is-multiline">
-    {{ range first .Limit (where .c.Data.Pages.ByDate.Reverse "Type" .Section) }}
-    {{ partial "list-item-box" . }}
-    {{ end }}
+    <div class="content">
+      <h2 class="title" id="{{ .Section }}"><a href="{{ .BaseURL | absLangURL }}{{ .Section }}">{{ title .Section }}</a></h2>
+      <div class="columns is-multiline">
+      {{ range first .Limit (where .c.Data.Pages.ByDate.Reverse "Type" .Section) }}
+      {{ partial "list-item-box" . }}
+      {{ end }}
+      </div>
     </div>
   </div>
 </section>
