@@ -5,7 +5,7 @@
   <div class="container">
     <div class="title center">{{ .Title }}</div>
     <div class="columns is-multiline">
-      {{ range .Data.Pages }}
+      {{ range .Pages }}
       {{ partial "list-item-box" . }}
       {{ end }}
     </div>

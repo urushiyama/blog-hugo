@@ -1,6 +1,7 @@
 ---
 title: "Front Matterに基づいてHugoのコンテンツ（ページ）を抽出する"
 date: 2019-03-30T21:10:01+09:00
+lastmod: 2019-09-24T17:31:00+09:00
 draft: false
 paginatable: true
 tags:
@@ -10,6 +11,8 @@ keywords:
     - "リストアップ"
     - "パターンマッチ"
 ---
+
+（2019-09-24 Hugo v0.58リリースに伴いコードを修正．）
 
 先日Webページの論文リストを更新し，「査読付き/査読なし」，「国際/国内」，といったカテゴリ別に分けてリスト表示する機能を追加した．
 その際に，各ページのFront Matterに記載したカテゴリ情報をもとにページを抽出する方法を見つけたので，備忘録を残しておく．
@@ -38,10 +41,10 @@ categories:
 
 例えば，"poster"というカテゴリ情報をもつページを抽出するには，以下の`where`文を用いれば良い：
 ```go
-{{ where .Data.Pages ".Params.categories" "intersect" (slice "poster") }}
+{{ where .Site.Pages ".Params.categories" "intersect" (slice "poster") }}
 ```
 
-`.Data.Pages`でサイト上の全ページ情報を抽出元として，`".Params.categories"`でFront Matter上に記載したパラメータ中の`categories`を検索対象として指定している．
+`.Site.Pages`でサイト上の全ページ情報を抽出元として，`".Params.categories"`でFront Matter上に記載したパラメータ中の`categories`を検索対象として指定している．
 
 抽象化すると次の通り：
 ```go
@@ -52,12 +55,12 @@ categories:
 
 例えば，"international"と"poster"という2つのカテゴリ情報をすべてもつページを抽出するには，以下の`where`文を用いれば良い：
 ```go
-{{ where .Data.Pages ".Params.categories" "intersect" (slice "poster") | intersect (where .Data.Pages ".Params.categories" "intersect" (slice "international")) }}
+{{ where .Site.Pages ".Params.categories" "intersect" (slice "poster") | intersect (where .Site.Pages ".Params.categories" "intersect" (slice "international")) }}
 ```
 
 また，"peer-reviewed"，"international"，"poster"という3つのカテゴリ情報をすべてもつページを抽出する方法は次の通り：
 ```go
-{{ where .Data.Pages ".Params.categories" "intersect" (slice "poster") | intersect (where .Data.Pages ".Params.categories" "intersect" (slice "international")) | intersect (where .Data.Pages ".Params.categories" "intersect" (slice "peer-reviewed")) }}
+{{ where .Site.Pages ".Params.categories" "intersect" (slice "poster") | intersect (where .Site.Pages ".Params.categories" "intersect" (slice "international")) | intersect (where .Site.Pages ".Params.categories" "intersect" (slice "peer-reviewed")) }}
 ```
 
 以降，複数のカテゴリ情報をすべてもつページを抽出するには，後ろに`| intersect ...`を順次追加すればよい．
@@ -71,12 +74,12 @@ categories:
 Case 2をもとにナイーブに実装するならば，Case 2の`| intersect`を`| union`に変えるだけで良い．
 例えば，"international"と"poster"という2つのカテゴリ情報のうちいずれかをもつページを抽出するには，以下の`where`文を用いれば良い：
 ```go
-{{ where .Data.Pages ".Params.categories" "intersect" (slice "poster") | union (where .Data.Pages ".Params.categories" "intersect" (slice "international")) }}
+{{ where .Site.Pages ".Params.categories" "intersect" (slice "poster") | union (where .Site.Pages ".Params.categories" "intersect" (slice "international")) }}
 ```
 
 ただし，もっと短く実装することができる：
 ```go
-{{ where .Data.Pages ".Params.categories" "intersect" (slice "poster", "international") }}
+{{ where .Site.Pages ".Params.categories" "intersect" (slice "poster", "international") }}
 ```
 
 3つ以上のうちいずれか1つ以上をもつページを抽出するには，順次`slice`の引数として追加すれば良い．
