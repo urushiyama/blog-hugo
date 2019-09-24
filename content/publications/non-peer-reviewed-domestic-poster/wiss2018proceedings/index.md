@@ -20,6 +20,7 @@ categories:
     - "domestic"
     - "archival"
     - "poster"
+ogimage: "img/figure1.jpg"
 ---
 
 ## 概要
