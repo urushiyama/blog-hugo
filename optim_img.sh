@@ -27,15 +27,15 @@ popd
 pushd static/
 
 for file in `find . -type f -name "*.opt.png"`; do
-  mv $file `echo $file | sed 's/\.opt\.[^\.]*$//'`.png
+  mv -f $file `echo $file | sed 's/\.opt\.[^\.]*$//'`.png
 done
 
 for file in `find . -type f -name "*.opt.jpe?g"`; do
-  mv $file `echo $file | sed 's/\.opt\.[^\.]*$//'`.jpeg
+  mv -f $file `echo $file | sed 's/\.opt\.[^\.]*$//'`.jpeg
 done
 
 for file in `find . -type f -name "*.opt.gif"`; do
-  mv $file `echo $file | sed 's/\.opt\.[^\.]*$//'`.gif
+  mv -f $file `echo $file | sed 's/\.opt\.[^\.]*$//'`.gif
 done
 
 popd
