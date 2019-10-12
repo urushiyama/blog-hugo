@@ -2,16 +2,24 @@
 title: ""
 date: 2018-04-30T02:48:19+09:00
 draft: false
+projectroot: true
+projecticon: "/img/icon.png"
+shorttitle: "urushiyama's trivia"
 ---
 
 # Yuta URUSHIYAMA
+
+Hello! My name is Yuta Urushiyama.
+I proceed with HCI research and app development, aiming to be an application engineer who can logically explain why the product has usability.
+I like argument labels, thus I mainly use the Swift language both for research and for personal app development.
+SerialBuddy, which is the serial communication app for macOS that I released, achieved 2nd rank of Dev Tools on Mac App Store (May 14, 2019).
 
 {{% twoside %}}
 
 {{% twosideleft %}}
 
 {{% card %}}
-![My Photo](/img/photo.jpg)
+![My Photo](/img/face.png)
 {{% /card %}}
 
 ## Contact
@@ -26,12 +34,12 @@ Research: urushiyama [at] iplab.cs.tsukuba.ac.jp
 
 ## Affiliation
 
+Graduate student  
+Department of Computer Science  
+Graduate school of Systems and Information Engineering
+
 [Interactive Programming Laboratory (IPLAB)](https://www.iplab.cs.tsukuba.ac.jp)  
 WAVE Team
-
-Room 1024, Building SB, Third area,
-University of Tsukuba, Tenoudai 1-1-1, Tsukuba science city,
-Ibaraki 305-8573, Japan
 
 ## Field of Interest
 

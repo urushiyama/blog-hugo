@@ -4,7 +4,7 @@
     <div class="content">
       <h2 class="title" id="{{ .Section }}"><a href="{{ .BaseURL | absLangURL }}{{ .Section }}">{{ title .Section }}</a></h2>
       <div class="columns is-multiline">
-      {{ range first .Limit (where .c.Site.Pages.ByDate.Reverse "Type" .Section) }}
+      {{ range first .Limit (where (where .c.Site.Pages.ByDate.Reverse "Type" .Section) "IsPage" true) }}
       {{ partial "list-item-box" . }}
       {{ end }}
       </div>

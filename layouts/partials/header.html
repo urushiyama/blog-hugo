@@ -5,7 +5,11 @@
 {{ end }}
 {{ if eq .IsHome true }}
 {{ .Scratch.Set "title" .Site.Title }}
-{{ .Scratch.Set "desc" .Site.Params.description }}
+{{ if .Truncated }}
+{{ .Scratch.Set "desc" (printf "%s..." (.Summary | plainify)) }}
+{{ else }}
+{{ .Scratch.Set "desc" (.Summary | plainify) }}
+{{ end }}
 {{ .Scratch.Set "type" "website" }}
 {{ else }}
 {{ .Scratch.Set "title" (printf "%s - %s" .Title .Site.Title) }}
