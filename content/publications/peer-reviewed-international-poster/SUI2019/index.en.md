@@ -8,6 +8,13 @@ paginatable: true
 # url_bib: /#
 # url_project: /#
 # url_repo: /#
+authors:
+    - "Yuta Urushiyama"
+    - "Buntarou Shizuki"
+    - "Shin Takahashi"
+publisher:
+    name: "ACM"
+    id: "https://www.acm.org/"
 reference: "<u>Yuta Urushiyama</u>, Buntarou Shizuki, Shin Takahashi. Preliminary Study of Screen Extension for Smartphone Using External Display. SUI '19: ACM Symposium on Spatial User Interaction, October 19-20, 2019, 2 pages. (to appear)"
 keywords:
     - "Screen Extension"

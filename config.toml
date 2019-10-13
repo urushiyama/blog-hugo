@@ -15,7 +15,7 @@ enableEmoji = true
 [params]
 description = ""
 keywords = ["プログラミング", "HCI", "つくば", "ブログ"]
-author = "urushiyama"
+author = "Yuta Urushiyama"
 sharingicons = true
 
 [params.highlight]
