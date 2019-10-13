@@ -19,7 +19,7 @@
     <ul>
         {{ range .Translations }}
         <li>
-            <a href="{{ .Permalink }}">
+            <a href="{{ .RelPermalink }}">
               {{ if (eq .Lang "en") }}
                 English
               {{ else }}

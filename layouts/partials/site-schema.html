@@ -52,11 +52,11 @@
   {
     "@context": "http://schema.org",
     "@type": "BlogPosting",
-    "@id": "{{ .Permalink }}",
+    "@id": "{{ .RelPermalink }}",
     "headline": "{{ .Title }}",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "{{ .Permalink }}"
+      "@id": "{{ .RelPermalink }}"
     },
     {{ if ge .Site.Params.image.width 696 }}
      "image": {
@@ -70,7 +70,7 @@
     {{ with .Params.tags }}
     "keywords": "{{ delimit . ", " }}",
     {{ end }}
-    "url": "{{ .Permalink }}",
+    "url": "{{ .RelPermalink }}",
     {{ if not .PublishDate.IsZero }}
     "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" | safeHTML }}",
     {{ else if not .Date.IsZero }}
@@ -131,7 +131,7 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "{{ .Permalink }}",
+          "@id": "{{ .RelPermalink }}",
           "name": "{{ .Title }}"
         }
       }
@@ -145,7 +145,7 @@
   {
     "@context": "http://schema.org",
     "@type": "ScholarlyArticle",
-    "@id": "{{ .Permalink }}",
+    "@id": "{{ .RelPermalink }}",
     "headline": "{{ .Title }}",
     {{ if ge .Site.Params.image.width 696 }}
      "image": {
@@ -159,7 +159,7 @@
     {{ with .Params.tags }}
     "keywords": "{{ delimit . ", " }}",
     {{ end }}
-    "url": "{{ .Permalink }}",
+    "url": "{{ .RelPermalink }}",
     {{ if not .PublishDate.IsZero }}
     "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" | safeHTML }}",
     {{ else if not .Date.IsZero }}
@@ -201,7 +201,7 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "{{ .Permalink }}",
+          "@id": "{{ .RelPermalink }}",
           "name": "{{ .Title }}"
         }
       }

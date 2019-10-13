@@ -2,7 +2,7 @@
 <article class="column is-4">
   <div class="card content">
     <div class="card-image">
-      <a href="{{ .Permalink }}">
+      <a href="{{ .RelPermalink }}">
         <figure class="image">
           <img src="{{ .Site.BaseURL }}{{ .File.Dir }}{{ .Params.ogimage }}"/>
         </figure>
@@ -10,14 +10,14 @@
     </div>
     <div class="card-content">
       {{ if eq .Section "publications" }}
-        <h3 class="title"><a href="{{ .Permalink }}">{{ .Params.reference | safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}
+        <h3 class="title"><a href="{{ .RelPermalink }}">{{ .Params.reference | safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}
         </h3>
         {{ partial "iconlinks" . }}
       {{ else }}
         {{ if .Params.shorttitle }}
-          <h3 class="title"><a href="{{ .Permalink }}">{{ .Params.shorttitle | safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}</h3>
+          <h3 class="title"><a href="{{ .RelPermalink }}">{{ .Params.shorttitle | safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}</h3>
         {{ else }}
-          <h3 class="title"><a href="{{ .Permalink }}">{{ .Params.title | safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}</h3>
+          <h3 class="title"><a href="{{ .RelPermalink }}">{{ .Params.title | safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}</h3>
         {{ end }}
         <h4 class="subtitle is-6">
         {{ if eq (.Date.Format "January 2, 2006") (.Lastmod.Format "January 2, 2006") }}
@@ -32,7 +32,7 @@
         <div class="content">
           {{ .Summary | plainify | safeHTML }}
           {{ if .Truncated }}
-            ...<a class="button is-text" href="{{ .Permalink }}" style="height:20px">
+            ...<a class="button is-text" href="{{ .RelPermalink }}" style="height:20px">
               Read more
               <span class="icon is-small">
                 <i class="fa fa-angle-double-right"></i>
@@ -48,10 +48,10 @@
 <article class="column is-12">
   <div class="box">
     {{ if eq .Section "publications" }}
-    <h3 class="title"><a href="{{ .Permalink }}">{{ .Params.reference | safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}</h3>
+    <h3 class="title"><a href="{{ .RelPermalink }}">{{ .Params.reference | safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}</h3>
     {{ partial "iconlinks" . }}
     {{ else }}
-    <h3 class="title"><a href="{{ .Permalink }}">{{ .Params.title | safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}</h3>
+    <h3 class="title"><a href="{{ .RelPermalink }}">{{ .Params.title | safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}</h3>
     <h4 class="subtitle is-6">
       {{ if eq (.Date.Format "January 2, 2006") (.Lastmod.Format "January 2, 2006") }}
       {{ .Date.Format "January 2, 2006" }}
@@ -65,7 +65,7 @@
     <div class="content">
       {{ .Summary | plainify | safeHTML }}
       {{ if .Truncated }}
-      ...<a class="button is-text" href="{{ .Permalink }}" style="height:20px">
+      ...<a class="button is-text" href="{{ .RelPermalink }}" style="height:20px">
         Read more
         <span class="icon is-small">
           <i class="fa fa-angle-double-right"></i>

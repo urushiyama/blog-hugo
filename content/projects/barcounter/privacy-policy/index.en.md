@@ -10,6 +10,8 @@ navigations:
       url: "../support/"
     - title: "Privacy Policy"
       url: "#"
+    - title: "Acknowledgements"
+      url: "../acknowledgements/"
     - title: "Release Note"
       url: "../release-note/"
 ---

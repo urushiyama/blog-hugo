@@ -22,6 +22,8 @@ navigations:
       url: "support/"
     - title: "Privacy Policy"
       url: "privacy-policy/"
+    - title: "Acknowledgements"
+      url: "acknowledgements/"
     - title: "Release Note"
       url: "release-note/"
 image: "img/BarCounter.png"

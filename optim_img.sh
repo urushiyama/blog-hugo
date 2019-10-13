@@ -1,5 +1,23 @@
 #!/bin/bash
 
+echo "Remove images in static dir..."
+
+pushd static/
+
+for file in `find . -type f -name "*.png"`; do
+  rm -f $file
+done
+
+for file in `find . -type f -name "*.jpe?g"`; do
+  rm -f $file
+done
+
+for file in `find . -type f -name "*.gif"`; do
+  rm -f $file
+done
+
+popd
+
 pushd content/
 
 echo "Optimize images in content dir..."

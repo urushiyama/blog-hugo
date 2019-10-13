@@ -16,6 +16,24 @@ navigations:
 
 # Release Note
 
+## v1.3.0
+
+More representation, less trouble.
+
+NEW FEATURE:
+
+- Add "Launch at login" option  
+- Remove "Auto-Adjust display" option (because the app can count words of multi-language)  
+- Offers In-App Purchase to unlock additional features
+
+ADDITIONAL FEATURE:
+
+- Unlocks line & sentence count
+
+FIXED:
+
+- The issue that hyphen caused the count to be less than actual
+
 ## v1.2.1
 
 People prefer sanitized and cleaned ones, right?

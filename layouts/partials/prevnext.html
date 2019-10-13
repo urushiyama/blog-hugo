@@ -3,12 +3,12 @@
     <div class="content">
       <nav class="pagination is-centered" role="navigation">
         {{ with .PrevInSection }}
-        <a href="{{ .Permalink }}" class="pagination-previous">Prev: {{ .Title | truncate 16 }}</a>
+        <a href="{{ .RelPermalink }}" class="pagination-previous">Prev: {{ .Title | truncate 16 }}</a>
         {{ else }}
         <a href="" class="pagination-previous" disabled>No Previous Page</a>
         {{ end }}
         {{ with .NextInSection }}
-        <a href="{{ .Permalink }}" class="pagination-next">Next: {{ .Title | truncate 16 }}</a>
+        <a href="{{ .RelPermalink }}" class="pagination-next">Next: {{ .Title | truncate 16 }}</a>
         {{ else }}
         <a href="" class="pagination-next" disabled>No Next Page</a>
         {{ end }}

@@ -16,7 +16,7 @@
           <ol>
           {{ range $peerReviewedInternationalPoster }}
             <li>
-              <a href="{{ .Permalink }}">{{ .Params.reference | safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}
+              <a href="{{ .RelPermalink }}">{{ .Params.reference | safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}
               {{ partial "iconlinks" . }}
             </li>
           {{ end }}
@@ -34,7 +34,7 @@
           <ol>
           {{ range $nonPeerReviewedDomesticOral}}
             <li>
-              <a href="{{ .Permalink }}">{{ .Params.reference | safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}
+              <a href="{{ .RelPermalink }}">{{ .Params.reference | safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}
               {{ partial "iconlinks" . }}
             </li>
           {{ end }}
@@ -52,7 +52,7 @@
           <ol>
           {{ range $nonPeerReviewedDomesticPoster }}
             <li>
-              <a href="{{ .Permalink }}">{{ .Params.reference| safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}
+              <a href="{{ .RelPermalink }}">{{ .Params.reference| safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}
               {{ partial "iconlinks" . }}
             </li>
           {{ end }}
