@@ -16,19 +16,15 @@ navigations:
 
 # Release Note
 
-## v1.3.0
+## v1.3.5
 
-More representation, less trouble.
+Be friendly with users!
 
 NEW FEATURE:
 
 - Add "Launch at login" option  
 - Remove "Auto-Adjust display" option (because the app can count words of multi-language)  
-- Offers In-App Purchase to unlock additional features
-
-ADDITIONAL FEATURE:
-
-- Unlocks line & sentence count
+- Add Japanese localization
 
 FIXED:
 
