@@ -48,3 +48,8 @@ fa_icon = "fa-twitter"
   toc = "Table of Contents"
   keywords = ["programming", "HCI", "tsukuba", "blog"]
   languageURL = "en"
+
+# Enable HTML tag in Markdown.
+# HTML-omitted markdown is not a genuine markdown, right?
+[markup.goldmark.renderer]
+unsafe= true

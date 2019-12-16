@@ -6,7 +6,7 @@ draft: false
 paginatable: true
 url_pdf: https://www.wiss.org/WISS2019Proceedings/demo/043.pdf
 # url_doi: /#
-# url_bib: /#
+url_bib: https://urushiyama.github.io/publications/non-peer-reviewed-domestic-poster/wiss2019proceedings/assets/urushiyamaWISS2019demo.bib
 # url_project: /#
 # url_repo: /#
 authors:

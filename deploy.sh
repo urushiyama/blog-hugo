@@ -11,6 +11,17 @@ hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
 
 # Go To Public folder
 cd public
+
+# Force to change BaseURL
+for TARGET in `find . -name "*.html" -or -name "*.xml"`; do
+  if [ "$(uname)" == 'Darwin' ]; then
+    # macOS
+    sed -i '' -e 's!http://localhost:1313!https://urushiyama.github.io!g' "$TARGET"
+  else
+    sed -i -e 's!http://localhost:1313!https://urushiyama.github.io!g' "$TARGET"
+  fi
+done
+
 # Add changes to git.
 git add -A
 

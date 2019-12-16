@@ -8,7 +8,7 @@ shorttitle: "urushiyamaのさまつごと"
 ogimage: "/img/icon.png"
 ---
 
-# <span>漆山 裕太</span><wbr><span class="has-text-weight-light" style="display: inline-block;">&nbsp; - _Yuta URUSHIYAMA_</span>
+<h1><span>漆山 裕太</span><wbr><span class="has-text-weight-light" style="display: inline-block;">&nbsp; - <i>Yuta URUSHIYAMA</i></span></h1>
 
 制作物が「なぜ使いやすいか」を論理的に説明できるアプリケーションエンジニアを目指して，ヒューマンコンピュータインタラクション分野の研究とアプリ開発をしています．
 
@@ -59,7 +59,7 @@ WAVEチーム
 ## スキル
 
 - 常用言語
-    - 日本語（ネイティブ），English（TOEIC Reading&Writing 805，2017年）
+    - 日本語（ネイティブ），English（TOEIC Listening&Reading 805，2017年）
 - コーディング言語
     - Swift（MacOS, iOSアプリ開発に常用），Objective-C（OSSライブラリを読む程度），HTML，CSS，SASS，JavaScript（含Node.js），C（含mbed），C++（含Qt），Ruby（含Rails），Java，PHP，Python
     - R

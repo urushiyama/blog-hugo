@@ -4,8 +4,8 @@ date: 2019-01-14T00:00:00+09:00
 draft: false
 paginatable: true
 url_pdf: https://ipsj.ixsq.nii.ac.jp/ej/?action=repository_uri&item_id=193939&file_id=1&file_no=1
-# url_doi: /#
-# url_bib: /#
+url_doi: http://id.nii.ac.jp/1001/00193850/
+url_bib: https://ipsj.ixsq.nii.ac.jp/ej/?action=repository_bibtex&itemId=193939&itemNo=1
 # url_project: /#
 # url_repo: /#
 authors:
