@@ -1,79 +1,89 @@
 {{ if .Params.ogimage }}
-<article class="column is-4">
+<article class="column is-12">
   <div class="card content">
-    <div class="card-image">
-      <a href="{{ .RelPermalink }}">
-        <figure class="image">
-          <img src="{{ .Site.BaseURL }}{{ .File.Dir }}{{ .Params.ogimage }}"/>
-        </figure>
-      </a>
-    </div>
-    <div class="card-content">
-      {{ if eq .Section "publications" }}
-        <h3 class="title"><a href="{{ .RelPermalink }}">{{ .Params.reference | safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}
-        </h3>
-        {{ partial "iconlinks" . }}
-      {{ else }}
-        {{ if .Params.shorttitle }}
-          <h3 class="title"><a href="{{ .RelPermalink }}">{{ .Params.shorttitle | safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}</h3>
-        {{ else }}
-          <h3 class="title"><a href="{{ .RelPermalink }}">{{ .Params.title | safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}</h3>
-        {{ end }}
-        <h4 class="subtitle is-6">
-        {{ if eq (.Date.Format "January 2, 2006") (.Lastmod.Format "January 2, 2006") }}
-          {{ .Date.Format "January 2, 2006" }}
-        {{ else }}
-          {{ .Date.Format "January 2, 2006" }} - {{ .Lastmod.Format "January 2, 2006" }}
-        {{ end }}
-        </h4>
-        {{ if .Params.tags }}
-          {{ partial "tags" .Params.tags }}
-        {{ end }}
-        <div class="content">
-          {{ .Summary | plainify | safeHTML }}
-          {{ if .Truncated }}
-            ...<a class="button is-text" href="{{ .RelPermalink }}" style="height:20px">
-              Read more
-              <span class="icon is-small">
-                <i class="fa fa-angle-double-right"></i>
-              </span>
-            </a>
+    <div class="columns">
+      <div class="column is-8">
+        <div class="card-content">
+          {{ if eq .Section "publications" }}
+            <h3 class="title"><a href="{{ .RelPermalink }}">{{ .Params.reference | safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}
+            </h3>
+            {{ partial "iconlinks" . }}
+          {{ else }}
+            {{ if .Params.shorttitle }}
+              <h3 class="title"><a href="{{ .RelPermalink }}">{{ .Params.shorttitle | safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}</h3>
+            {{ else }}
+              <h3 class="title"><a href="{{ .RelPermalink }}">{{ .Params.title | safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}</h3>
+            {{ end }}
+            <h4 class="subtitle is-6">
+            {{ if eq (.Date.Format "January 2, 2006") (.Lastmod.Format "January 2, 2006") }}
+              {{ .Date.Format "January 2, 2006" }}
+            {{ else }}
+              {{ .Date.Format "January 2, 2006" }} - {{ .Lastmod.Format "January 2, 2006" }}
+            {{ end }}
+            </h4>
+            {{ if .Params.tags }}
+              {{ partial "tags" .Params.tags }}
+            {{ end }}
+            <div class="content">
+              {{ .Summary | plainify | safeHTML }}
+              {{ if .Truncated }}
+                ...<a class="button is-text" href="{{ .RelPermalink }}" style="height:20px">
+                  Read more
+                  <span class="icon is-small">
+                    <i class="fa fa-angle-double-right"></i>
+                  </span>
+                </a>
+              {{ end }}
+            </div>
           {{ end }}
         </div>
-      {{ end }}
+      </div>
+      <div class="column is-4">
+        <div class="card-content">
+          <div class="card-image">
+            <a href="{{ .RelPermalink }}">
+              <figure class="image">
+                <img src="{{ .Site.BaseURL }}{{ .File.Dir }}{{ .Params.ogimage }}"/>
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </article>
 {{ else }}
 <article class="column is-12">
-  <div class="box">
-    {{ if eq .Section "publications" }}
-    <h3 class="title"><a href="{{ .RelPermalink }}">{{ .Params.reference | safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}</h3>
-    {{ partial "iconlinks" . }}
-    {{ else }}
-    <h3 class="title"><a href="{{ .RelPermalink }}">{{ .Params.title | safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}</h3>
-    <h4 class="subtitle is-6">
-      {{ if eq (.Date.Format "January 2, 2006") (.Lastmod.Format "January 2, 2006") }}
-      {{ .Date.Format "January 2, 2006" }}
+  <div class="card-content">
+    <div class="box">
+      {{ if eq .Section "publications" }}
+      <h3 class="title"><a href="{{ .RelPermalink }}">{{ .Params.reference | safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}</h3>
+      {{ partial "iconlinks" . }}
       {{ else }}
-      {{ .Date.Format "January 2, 2006" }} - {{ .Lastmod.Format "January 2, 2006" }}
+      <h3 class="title"><a href="{{ .RelPermalink }}">{{ .Params.title | safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}</h3>
+      <h4 class="subtitle is-6">
+        {{ if eq (.Date.Format "January 2, 2006") (.Lastmod.Format "January 2, 2006") }}
+        {{ .Date.Format "January 2, 2006" }}
+        {{ else }}
+        {{ .Date.Format "January 2, 2006" }} - {{ .Lastmod.Format "January 2, 2006" }}
+        {{ end }}
+      </h4>
+      {{ if .Params.tags }}
+      {{ partial "tags" .Params.tags }}
       {{ end }}
-    </h4>
-    {{ if .Params.tags }}
-    {{ partial "tags" .Params.tags }}
-    {{ end }}
-    <div class="content">
-      {{ .Summary | plainify | safeHTML }}
-      {{ if .Truncated }}
-      ...<a class="button is-text" href="{{ .RelPermalink }}" style="height:20px">
-        Read more
-        <span class="icon is-small">
-          <i class="fa fa-angle-double-right"></i>
-        </span>
-      </a>
+      <div class="content">
+        {{ .Summary | plainify | safeHTML }}
+        {{ if .Truncated }}
+        ...<a class="button is-text" href="{{ .RelPermalink }}" style="height:20px">
+          Read more
+          <span class="icon is-small">
+            <i class="fa fa-angle-double-right"></i>
+          </span>
+        </a>
+        {{ end }}
+      </div>
       {{ end }}
     </div>
-    {{ end }}
   </div>
 </article>
 {{ end }}
