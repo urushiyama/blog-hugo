@@ -58,6 +58,24 @@
           {{ end }}
           </ol>
         {{ end }}
+        {{ $thesis := where .c.Site.Pages.ByDate.Reverse ".Params.categories" "intersect" (slice "thesis") }}
+        {{ if $thesis }}
+        <li class="subtitle">
+        {{ if eq .c.Lang "en" }}
+        Thesis for Degrees
+        {{ else }}
+        学位論文
+        {{ end }}
+        </li>
+          <ol>
+          {{ range $thesis }}
+            <li>
+              <a href="{{ .RelPermalink }}">{{ .Params.reference | safeHTML }}</a>{{ if .Draft }} ::Draft{{ end }}
+              {{ partial "iconlinks" . }}
+            </li>
+          {{ end }}
+          </ol>
+        {{ end }}
       </ul>
     </div>
   </div>
