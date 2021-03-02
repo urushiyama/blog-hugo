@@ -10,12 +10,14 @@ url_bib: https://ipsj.ixsq.nii.ac.jp/ej/?action=repository_bibtex&itemId=198358&
 # url_repo: /#
 authors:
     - "漆山裕太"
+    - "髙倉礼"
+    - "鈴木翔大"
     - "志築文太郎"
     - "高橋伸"
 publisher:
     name: "情報処理学会"
     id: "http://www.ipsj.or.jp/"
-reference: <u>漆山裕太</u>，志築文太郎，高橋伸．異なる手形状に対する周波数応答の予備調査．情報処理学会研究報告，Vol. 2019-HCI-184，No. 2，情報処理学会，2019年7月，8 pages．
+reference: <u>漆山裕太</u>，髙倉礼，鈴木翔大，志築文太郎，高橋伸．異なる手形状に対する周波数応答の予備調査．情報処理学会研究報告，Vol. 2019-HCI-184，No. 2，情報処理学会，2019年7月，8 pages．
 tags:
     - "HCI研究会"
 keywords:
