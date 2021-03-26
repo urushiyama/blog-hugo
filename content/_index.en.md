@@ -34,13 +34,15 @@ Research: urushiyama [at] iplab.cs.tsukuba.ac.jp
 
 ## Affiliation
 
-Graduate student  
+An IT company working on accounting and farming in Japan
+
+<!-- Graduate student  
 Department of Computer Science  
 Graduate school of Systems and Information Engineering  
-University of Tsukuba
+University of Tsukuba -->
 
-[Interactive Programming Laboratory (IPLAB)](https://www.iplab.cs.tsukuba.ac.jp)  
-WAVE Team
+<!-- [Interactive Programming Laboratory (IPLAB)](https://www.iplab.cs.tsukuba.ac.jp)  
+WAVE Team -->
 
 ## Field of Interest
 
@@ -63,5 +65,6 @@ WAVE Team
     <dd>I finished College of Media Arts, Science and Technology, School of Informatics, University of Tsukuba.</dd>
     <dd>I entered Department of Computer Science, Graduate School of Systems and Information Engineering, University of Tsukuba.</dd>
   <dt>2021</dt>
-    <dd>I will finished Department of Computer Science, Graduate School of Systems and Information Engineering, University of Tsukuba.</dd>
+    <dd>I finished Department of Computer Science, Graduate School of Systems and Information Engineering, University of Tsukuba.</dd>
+    <dd>I entered an IT company working on accounting and farming in Japan.</dd>
 </dl>
