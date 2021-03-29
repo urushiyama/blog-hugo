@@ -36,16 +36,10 @@ macOS向けのシリアル通信アプリとして個人開発したSerialBuddy�
 
 税務会計と農業のIT企業  
 （試用期間中のため社名は非公開）
-<!-- 筑波大学システム情報工学研究科コンピュータサイエンス専攻  
-博士前期課程2年
 
-[インタラクティブプログラミング研究室（IPLAB）](https://www.iplab.cs.tsukuba.ac.jp)  
-WAVEチーム -->
+## 学会
 
-<!-- ## 学会
-
-- ACM Student Membership
-- 情報処理学会 学生会員 -->
+- [ACM Professional Membership](https://member.acm.org/~yurushiyama)
 
 ## 興味のある分野
 

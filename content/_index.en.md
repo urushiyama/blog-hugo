@@ -36,6 +36,10 @@ Research: urushiyama [at] iplab.cs.tsukuba.ac.jp
 
 An IT company working on accounting and farming in Japan
 
+## Membership
+
+- [ACM Professional Membership](https://member.acm.org/~yurushiyama)
+
 <!-- Graduate student  
 Department of Computer Science  
 Graduate school of Systems and Information Engineering  
