@@ -36,10 +36,6 @@ macOS向けのシリアル通信アプリとして個人開発したSerialBuddy�
 
 税務会計と農業のIT企業
 
-## 学会
-
-- [ACM Professional Membership](https://member.acm.org/~yurushiyama)
-
 ## 興味のある分野
 
 - Human Computer Interface (HCI)
